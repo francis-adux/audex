@@ -1,0 +1,50 @@
+---
+import { testimonials } from '../../data/testimonials';
+import { company } from '../../data/company';
+---
+
+<section class="section section-light" id="temoignages">
+  <div class="container-audex">
+    <div class="testimonials-header">
+      <h2>Ce que disent nos clients</h2>
+      <a href={company.googleReviewsUrl} class="google-rating-link" target="_blank" rel="noopener">
+        <div class="google-rating">
+          <span class="stars" aria-label="5 étoiles">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span>5/5 — {company.reviewCount} avis Google</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+      </a>
+    </div>
+
+    <div class="testimonial-carousel" id="testimonial-carousel" aria-label="Témoignages clients">
+      <div class="testimonial-track" id="testimonial-track">
+        {testimonials.map((t) => (
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote class="testimonial-quote">{t.quote}</blockquote>
+              <p class="testimonial-author">— {t.author}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carousel-prev" aria-label="Témoignage précédent" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <button class="carousel-btn" id="carousel-next" aria-label="Témoignage suivant" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="text-center mt-2">
+        <a href={company.googleReviewsUrl} class="btn btn-outline-dark" target="_blank" rel="noopener">
+          Voir tous les avis Google
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

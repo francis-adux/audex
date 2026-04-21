@@ -1,0 +1,51 @@
+---
+import { services } from '../../data/services';
+import { company } from '../../data/company';
+
+export interface Props {
+  solid?: boolean;
+}
+
+const { solid = false } = Astro.props;
+---
+
+<header class:list={['site-header', solid && 'solid']} id="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="AUDEX Avocats - Accueil">
+      <picture>
+        <source srcset="/images/logo-audex.webp" type="image/webp" />
+        <img src="/images/logo-audex.png" alt="AUDEX Avocats" class="logo-img" width="140" height="40" />
+      </picture>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link" aria-expanded="false" aria-haspopup="true">Nos services</a>
+          <ul class="dropdown" role="menu">
+            {services.map((s) => (
+              <li><a href={`/services/${s.slug}`} role="menuitem">{s.navTitle}</a></li>
+            ))}
+          </ul>
+        </li>
+        <li class="nav-item"><a href="/le-cabinet" class="nav-link">Le cabinet</a></li>
+        <li class="nav-item"><a href="/notre-equipe" class="nav-link">Notre équipe</a></li>
+        <li class="nav-item"><a href="/nous-joindre" class="nav-link">Nous joindre</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href={company.phoneHref} class="header-phone" aria-label={`Appelez le ${company.phone}`}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>{company.phone}</span>
+      </a>
+      <a href="/nous-joindre" class="btn btn-gold header-cta">Planifier une consultation</a>
+    </div>
+
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,22 @@
+---
+import ServiceIcon from '../icons/ServiceIcon.astro';
+import type { ServiceEntry } from '../../data/services';
+
+export interface Props {
+  service: ServiceEntry;
+  showBlurb?: boolean;
+}
+
+const { service, showBlurb = false } = Astro.props;
+---
+
+<a href={`/services/${service.slug}`} class="service-card">
+  <div class="service-icon">
+    <ServiceIcon icon={service.icon} />
+  </div>
+  <div>
+    <h3>{service.title}</h3>
+    {showBlurb && <p>{service.blurb}</p>}
+  </div>
+  <span class="arrow" aria-hidden="true">&rarr;</span>
+</a>

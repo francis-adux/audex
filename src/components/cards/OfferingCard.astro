@@ -1,0 +1,16 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<div class="offering-card">
+  <svg class="offering-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+  <div class="offering-text">
+    <strong>{title}</strong>
+    <span>{description}</span>
+  </div>
+</div>

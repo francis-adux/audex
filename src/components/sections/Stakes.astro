@@ -1,0 +1,55 @@
+---
+const items = [
+  {
+    icon: 'clock',
+    text: "Perdre des droits parce qu'un délai légal est expiré",
+  },
+  {
+    icon: 'warning',
+    text: "Accepter une entente désavantageuse par méconnaissance de ses options",
+  },
+  {
+    icon: 'refresh',
+    text: "Laisser traîner une situation qui s'aggrave avec le temps",
+  },
+  {
+    icon: 'x',
+    text: "Prendre de mauvaises décisions sous le stress, sans conseil éclairé",
+  },
+];
+---
+
+<section class="section" id="enjeux">
+  <div class="container-audex">
+    <div class="section-header">
+      <h2>Ce qui arrive quand on attend trop</h2>
+    </div>
+
+    <div class="stakes-list">
+      {items.map((item) => (
+        <div class="stake-item">
+          <div class="stake-icon">
+            {item.icon === 'clock' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            )}
+            {item.icon === 'warning' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            )}
+            {item.icon === 'refresh' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            )}
+            {item.icon === 'x' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            )}
+          </div>
+          <p>{item.text}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center">
+      <p class="mb-2" style="font-size:1.15rem; font-weight:500; color:var(--color-navy);">Ne laissez pas l'incertitude décider à votre place.</p>
+      <a href="/nous-joindre" class="btn btn-gold btn-lg">Planifier une consultation</a>
+    </div>
+  </div>
+</section>

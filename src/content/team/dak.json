@@ -1,0 +1,8 @@
+{
+  "name": "Dak",
+  "role": "Mascotte du bonheur",
+  "bio": "Dak est le membre de l'équipe qui ne facture jamais d'honoraires. Spécialités : réduire le stress, distribuer des câlins et voler la vedette en réunion.",
+  "photo": "/images/equipe/dak.webp",
+  "order": 99,
+  "mascot": true
+}

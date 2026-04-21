@@ -1,0 +1,23 @@
+---
+import { company } from '../../data/company';
+
+export interface Props {
+  quote: string;
+  author?: string;
+  linkToGoogle?: boolean;
+}
+
+const { quote, author = 'Client(e) vérifié(e)', linkToGoogle = true } = Astro.props;
+---
+
+<section class="section">
+  <div class="container-audex">
+    <div class="testimonial-inner" style="max-width:700px; margin:0 auto;">
+      <div class="testimonial-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote class="testimonial-quote">{quote}</blockquote>
+      <p class="testimonial-author">
+        — {author}{linkToGoogle && <>, <a href={company.googleReviewsUrl} target="_blank" rel="noopener">Google</a></>}
+      </p>
+    </div>
+  </div>
+</section>

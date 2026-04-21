@@ -1,0 +1,26 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroInternal from '../components/sections/HeroInternal.astro';
+
+const entry = await getEntry('pages', 'politique-confidentialite');
+if (!entry) throw new Error('Missing pages/politique-confidentialite.md');
+const { Content } = await entry.render();
+const d = entry.data;
+---
+
+<BaseLayout title={d.title} description={d.description} headerSolid>
+  <HeroInternal
+    title={d.heroTitle}
+    subtitle={d.heroSubtitle}
+    breadcrumb={[{ label: 'Politique de confidentialité' }]}
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="about-content">
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

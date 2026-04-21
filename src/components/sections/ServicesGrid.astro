@@ -1,0 +1,34 @@
+---
+import ServiceCard from '../cards/ServiceCard.astro';
+import type { ServiceEntry } from '../../data/services';
+import { services as allServices } from '../../data/services';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  services?: ServiceEntry[];
+  showBlurb?: boolean;
+  sectionClass?: string;
+}
+
+const {
+  title = 'Nos champs de pratique',
+  subtitle = "Quelle que soit votre situation, nous avons l'expertise pour vous guider.",
+  services = allServices,
+  showBlurb = false,
+  sectionClass = 'section section-light',
+} = Astro.props;
+---
+
+<section class={sectionClass} id="services">
+  <div class="container-audex">
+    <div class="section-header">
+      <h2>{title}</h2>
+      {subtitle && <p>{subtitle}</p>}
+    </div>
+
+    <div class="services-grid">
+      {services.map((s) => <ServiceCard service={s} showBlurb={showBlurb} />)}
+    </div>
+  </div>
+</section>

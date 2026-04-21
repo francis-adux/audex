@@ -1,0 +1,35 @@
+---
+import { company } from '../../data/company';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  image?: string;
+  imageWebp?: string;
+  imageAlt?: string;
+}
+
+const {
+  title = 'Votre prochain chapitre commence ici.',
+  subtitle = 'Première consultation à tarif fixe. Confidentiel. Sans surprise.',
+  image = '/images/image-apres.png',
+  imageWebp = '/images/image-apres.webp',
+  imageAlt = 'Personne confiante marchant vers la lumière',
+} = Astro.props;
+---
+
+<section class="cta-final" id="cta-final">
+  <div class="hero-bg">
+    <picture>
+      <source srcset={imageWebp} type="image/webp" />
+      <img src={image} alt={imageAlt} loading="lazy" width="1920" height="800" />
+    </picture>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="cta-final-content">
+    <h2>{title}</h2>
+    <p>{subtitle}</p>
+    <a href="/nous-joindre" class="btn btn-gold btn-lg">Planifier une consultation</a>
+    <p class="hero-phone mt-1">ou appelez le <a href={company.phoneHref}>{company.phone}</a></p>
+  </div>
+</section>

@@ -57,6 +57,116 @@ collections:
       - { label: 'Brouillon', name: 'draft', widget: 'boolean', default: false }
       - { label: 'Contenu', name: 'body', widget: 'markdown' }
 
+  - name: services
+    label: Services juridiques
+    label_singular: Service
+    folder: src/content/services
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titre complet', name: 'title', widget: 'string' }
+      - { label: 'Titre court (fil d’Ariane)', name: 'shortTitle', widget: 'string' }
+      - { label: 'Ordre d’affichage', name: 'order', widget: 'number', default: 10, value_type: 'int' }
+      - { label: 'Titre SEO', name: 'seoTitle', widget: 'string' }
+      - { label: 'Description SEO', name: 'seoDescription', widget: 'text' }
+      - { label: 'Titre du hero', name: 'heroTitle', widget: 'string' }
+      - { label: 'Sous-titre du hero', name: 'heroSubtitle', widget: 'text' }
+      - { label: 'Image hero (PNG)', name: 'heroImage', widget: 'image', required: false }
+      - { label: 'Image hero (WebP)', name: 'heroImageWebp', widget: 'image', required: false }
+      - { label: 'Alt image hero', name: 'heroImageAlt', widget: 'string', required: false }
+      - { label: 'Titre de l’intro', name: 'introTitle', widget: 'string' }
+      - { label: 'Titre "Ce qu’Audex peut faire"', name: 'offeringsTitle', widget: 'string', default: "Ce qu'Audex peut faire pour vous" }
+      - { label: 'Sous-titre "Ce qu’Audex peut faire"', name: 'offeringsSubtitle', widget: 'text', required: false }
+      - label: "Ce qu'Audex peut faire"
+        name: 'offerings'
+        widget: 'list'
+        fields:
+          - { label: 'Titre', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'text' }
+      - label: 'Encadré mise en avant (optionnel)'
+        name: 'highlight'
+        widget: 'object'
+        required: false
+        fields:
+          - { label: 'Titre', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'text' }
+      - label: 'Témoignage (optionnel)'
+        name: 'testimonial'
+        widget: 'object'
+        required: false
+        fields:
+          - { label: 'Citation', name: 'quote', widget: 'text' }
+          - { label: 'Auteur', name: 'author', widget: 'string', default: 'Client(e) vérifié(e), Google' }
+      - label: 'Questions fréquentes'
+        name: 'faq'
+        widget: 'list'
+        fields:
+          - { label: 'Question', name: 'question', widget: 'string' }
+          - { label: 'Réponse (HTML permis)', name: 'answer', widget: 'text' }
+      - { label: 'Texte du CTA final', name: 'ctaText', widget: 'string', default: 'Discutez de votre situation avec un avocat' }
+      - { label: 'Services connexes (slugs)', name: 'relatedServices', widget: 'list', required: false }
+      - { label: 'Intro de la page (markdown)', name: 'body', widget: 'markdown' }
+
+  - name: team
+    label: Équipe
+    label_singular: Membre
+    folder: src/content/team
+    create: true
+    extension: 'json'
+    format: 'json'
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Nom complet', name: 'name', widget: 'string' }
+      - { label: 'Titre professionnel (ex. LL.B.)', name: 'credentials', widget: 'string', required: false }
+      - { label: 'Rôle', name: 'role', widget: 'string' }
+      - { label: 'Biographie', name: 'bio', widget: 'text' }
+      - { label: 'Photo', name: 'photo', widget: 'image', required: false }
+      - { label: 'Ordre d’affichage', name: 'order', widget: 'number', default: 10, value_type: 'int' }
+      - { label: 'Mascotte?', name: 'mascot', widget: 'boolean', default: false, required: false }
+
+  - name: pages
+    label: Pages du site
+    files:
+      - name: le-cabinet
+        label: "Page — Le cabinet"
+        file: src/content/pages/le-cabinet.md
+        fields:
+          - { label: 'Titre SEO', name: 'title', widget: 'string' }
+          - { label: 'Description SEO', name: 'description', widget: 'text' }
+          - { label: 'Titre du hero', name: 'heroTitle', widget: 'string' }
+          - { label: 'Sous-titre du hero', name: 'heroSubtitle', widget: 'text', required: false }
+          - { label: 'Image hero (PNG)', name: 'heroImage', widget: 'image', required: false }
+          - { label: 'Image hero (WebP)', name: 'heroImageWebp', widget: 'image', required: false }
+          - { label: 'Alt image hero', name: 'heroImageAlt', widget: 'string', required: false }
+          - { label: 'Contenu (markdown)', name: 'body', widget: 'markdown' }
+
+      - name: notre-equipe
+        label: "Page — Notre équipe (en-tête)"
+        file: src/content/pages/notre-equipe.md
+        fields:
+          - { label: 'Titre SEO', name: 'title', widget: 'string' }
+          - { label: 'Description SEO', name: 'description', widget: 'text' }
+          - { label: 'Titre du hero', name: 'heroTitle', widget: 'string' }
+          - { label: 'Sous-titre du hero', name: 'heroSubtitle', widget: 'text', required: false }
+          - { label: 'Image hero (PNG)', name: 'heroImage', widget: 'image', required: false }
+          - { label: 'Image hero (WebP)', name: 'heroImageWebp', widget: 'image', required: false }
+          - { label: 'Alt image hero', name: 'heroImageAlt', widget: 'string', required: false }
+          - { label: 'Contenu (markdown)', name: 'body', widget: 'markdown', required: false }
+
+      - name: politique-confidentialite
+        label: "Page — Politique de confidentialité"
+        file: src/content/pages/politique-confidentialite.md
+        fields:
+          - { label: 'Titre SEO', name: 'title', widget: 'string' }
+          - { label: 'Description SEO', name: 'description', widget: 'text' }
+          - { label: 'Titre du hero', name: 'heroTitle', widget: 'string' }
+          - { label: 'Sous-titre du hero', name: 'heroSubtitle', widget: 'text', required: false }
+          - { label: 'Contenu (markdown)', name: 'body', widget: 'markdown' }
+
   - name: landings
     label: Landing pages
     label_singular: Landing page
@@ -74,14 +184,3 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Publié', name: 'published', widget: 'boolean', default: true }
       - { label: 'Contenu de la page', name: 'body', widget: 'markdown' }
-
-  - name: pages
-    label: Pages
-    files:
-      - name: home
-        label: Page d'accueil
-        file: src/content/pages/home.md
-        fields:
-          - { label: 'Titre', name: 'title', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'Contenu', name: 'body', widget: 'markdown' }

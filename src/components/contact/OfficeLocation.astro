@@ -1,0 +1,29 @@
+---
+import type { Office } from '../../data/offices';
+
+export interface Props {
+  office: Office;
+  heading?: string;
+  mapHeight?: number;
+}
+
+const { office, heading, mapHeight = 200 } = Astro.props;
+const title = heading ?? `Bureau de ${office.name}`;
+---
+
+<div class="contact-location">
+  <h3>{title}</h3>
+  <p>{office.address}<br />{office.city} {office.postalCode}</p>
+  <div class="map-embed">
+    <iframe
+      src={office.mapSrc}
+      width="100%"
+      height={mapHeight}
+      style="border:0; border-radius:var(--radius);"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title={`Bureau AUDEX Avocats ${office.name}`}
+    />
+  </div>
+</div>

@@ -1,0 +1,21 @@
+---
+import StepCard from '../cards/StepCard.astro';
+---
+
+<section class="section" id="plan">
+  <div class="container-audex">
+    <div class="section-header">
+      <h2>Comment ça fonctionne</h2>
+    </div>
+
+    <div class="steps-grid">
+      <StepCard number={1} title="Appelez-nous" description="Prenez rendez-vous pour une première consultation. On prend le temps de vous écouter. Tarif fixe, pas de surprise." />
+      <StepCard number={2} title="On bâtit votre plan" description="Votre avocat vous explique vos options et la stratégie recommandée. Vous décidez, éclairé." />
+      <StepCard number={3} title="Avancez en confiance" description="On vous accompagne à chaque étape jusqu'à la résolution de votre dossier." isLast />
+    </div>
+
+    <div class="text-center mt-3">
+      <a href="/nous-joindre" class="btn btn-gold btn-lg">Planifier une consultation</a>
+    </div>
+  </div>
+</section>

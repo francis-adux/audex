@@ -1,0 +1,51 @@
+---
+export interface TrustItem {
+  type: string;
+  label: string;
+}
+
+export interface Props {
+  items?: TrustItem[];
+}
+
+const defaultItems: TrustItem[] = [
+  { type: 'year', label: 'Depuis 2013' },
+  { type: 'offices', label: '2 bureaux' },
+  { type: 'reviews', label: '61 avis Google' },
+  { type: 'practice', label: '10+ champs de pratique' },
+  { type: 'barreau', label: 'Barreau du Québec' },
+];
+
+const { items = defaultItems } = Astro.props;
+---
+
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    {items.map((item) => (
+      <div class="trust-item">
+        {item.type === 'year' && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        )}
+        {item.type === 'offices' && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        )}
+        {item.type === 'reviews' && (
+          <span class="stars" aria-label="5 étoiles sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        )}
+        {item.type === 'practice' && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        )}
+        {item.type === 'barreau' && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        )}
+        {item.type === 'mediation' && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        )}
+        {item.type === 'bilingue' && (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        )}
+        <span>{item.label}</span>
+      </div>
+    ))}
+  </div>
+</div>

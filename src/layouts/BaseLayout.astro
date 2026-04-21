@@ -1,16 +1,29 @@
 ---
+import '../styles/global.css';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import MobileCTAFloat from '../components/layout/MobileCTAFloat.astro';
+
 export interface Props {
   title: string;
   description?: string;
   image?: string;
+  headerSolid?: boolean;
 }
 
-const { title, description = 'Site propulsé par Astro et Netlify', image } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const {
+  title,
+  description = "Cabinet d'avocats accessible à Québec et Portneuf depuis 2013. Droit familial, criminel, commercial et plus. Première consultation à tarif fixe. Appelez le 418-462-1010.",
+  image,
+  headerSolid = false,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang="fr-CA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,28 +38,74 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    {image && <meta property="og:image" content={image} />}
-  </head>
-  <body class="min-h-screen bg-white text-gray-900 font-sans antialiased">
-    <header class="border-b border-gray-200">
-      <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="/" class="text-xl font-bold text-brand">Mon Site</a>
-        <div class="flex gap-6">
-          <a href="/" class="hover:text-brand">Accueil</a>
-          <a href="/blog" class="hover:text-brand">Blogue</a>
-          <a href="/contact" class="hover:text-brand">Contact</a>
-        </div>
-      </nav>
-    </header>
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:site_name" content="AUDEX Avocats" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
 
-    <main>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Header solid={headerSolid} />
+    <main id="main-content">
       <slot />
     </main>
+    <Footer />
+    <MobileCTAFloat />
 
-    <footer class="border-t border-gray-200 mt-16">
-      <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600">
-        <p>© {new Date().getFullYear()} Mon Site. Tous droits réservés.</p>
-      </div>
-    </footer>
+    <script is:inline>
+      // Scroll header
+      const header = document.getElementById('site-header');
+      const isSolidByDefault = header?.classList.contains('solid');
+      const onScroll = () => {
+        if (!header || isSolidByDefault) return;
+        if (window.scrollY > 50) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Mobile menu toggle
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const nav = document.getElementById('main-nav');
+      const overlay = document.getElementById('menu-overlay');
+      const closeMenu = () => {
+        toggle?.classList.remove('active');
+        nav?.classList.remove('open');
+        overlay?.classList.remove('active');
+        toggle?.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      };
+      toggle?.addEventListener('click', () => {
+        const isOpen = nav?.classList.toggle('open');
+        toggle.classList.toggle('active', isOpen);
+        overlay?.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+      overlay?.addEventListener('click', closeMenu);
+      document.querySelectorAll('.main-nav a').forEach((a) => {
+        a.addEventListener('click', (e) => {
+          if (a.getAttribute('href') === '#') return;
+          closeMenu();
+        });
+      });
+
+      // Dropdown (click on mobile, hover on desktop handled in CSS)
+      document.querySelectorAll('.has-dropdown > .nav-link').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth < 1024) {
+            e.preventDefault();
+            const parent = link.parentElement;
+            const isOpen = parent?.classList.toggle('open');
+            link.setAttribute('aria-expanded', String(Boolean(isOpen)));
+          }
+        });
+      });
+    </script>
   </body>
 </html>

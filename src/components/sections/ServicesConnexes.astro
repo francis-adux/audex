@@ -1,0 +1,25 @@
+---
+import { services } from '../../data/services';
+
+export interface Props {
+  slugs: string[];
+}
+
+const { slugs } = Astro.props;
+const related = slugs
+  .map((slug) => services.find((s) => s.slug === slug))
+  .filter((s): s is (typeof services)[number] => Boolean(s));
+---
+
+{related.length > 0 && (
+  <section class="section">
+    <div class="container-audex">
+      <h2>Autres services</h2>
+      <div class="related-services">
+        {related.map((s) => (
+          <a href={`/services/${s.slug}`} class="related-card">{s.title}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

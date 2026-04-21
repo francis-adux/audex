@@ -1,0 +1,21 @@
+---
+export interface Props {
+  number: number;
+  title: string;
+  description: string;
+  isLast?: boolean;
+}
+
+const { number, title, description, isLast = false } = Astro.props;
+---
+
+<div class="step-card">
+  <div class="step-number">{number}</div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+  {!isLast && (
+    <div class="step-arrow" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  )}
+</div>

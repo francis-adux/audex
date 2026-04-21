@@ -1,0 +1,46 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroInternal from '../components/sections/HeroInternal.astro';
+import TrustBar from '../components/sections/TrustBar.astro';
+import TestimonialSingle from '../components/sections/TestimonialSingle.astro';
+import CtaBlock from '../components/sections/CtaBlock.astro';
+
+const entry = await getEntry('pages', 'le-cabinet');
+if (!entry) throw new Error('Missing pages/le-cabinet.md');
+const { Content } = await entry.render();
+const d = entry.data;
+---
+
+<BaseLayout title={d.title} description={d.description} headerSolid>
+  <HeroInternal
+    title={d.heroTitle}
+    subtitle={d.heroSubtitle}
+    image={d.heroImage}
+    imageWebp={d.heroImageWebp}
+    imageAlt={d.heroImageAlt}
+    breadcrumb={[{ label: 'Le cabinet' }]}
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="about-content">
+        <Content />
+      </div>
+    </div>
+  </section>
+
+  <TrustBar items={[
+    { type: 'year', label: 'Fondé en 2013' },
+    { type: 'offices', label: '2 bureaux' },
+    { type: 'barreau', label: 'Barreau du Québec' },
+    { type: 'mediation', label: 'Médiation familiale accréditée' },
+    { type: 'bilingue', label: 'Français et anglais' },
+  ]} />
+
+  <TestimonialSingle
+    quote="J'ai été accompagnée lors d'un moment particulièrement difficile de ma vie. Leur équipe a su rendre le processus plus simple, mais surtout beaucoup plus léger à vivre."
+  />
+
+  <CtaBlock title="Discutez de votre situation avec notre équipe" />
+</BaseLayout>

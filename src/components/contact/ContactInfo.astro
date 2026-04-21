@@ -1,0 +1,32 @@
+---
+import OfficeLocation from './OfficeLocation.astro';
+import { offices } from '../../data/offices';
+import { company } from '../../data/company';
+
+export interface Props {
+  showOffices?: 'all' | 'quebec' | 'donnacona';
+  mapHeight?: number;
+}
+
+const { showOffices = 'all', mapHeight = 200 } = Astro.props;
+
+const filtered = offices.filter((o) => {
+  if (showOffices === 'quebec') return o.short === 'Québec';
+  if (showOffices === 'donnacona') return o.short === 'Donnacona';
+  return true;
+});
+---
+
+<div class="contact-info-wrap">
+  <div class="contact-phone-block">
+    <a href={company.phoneHref} class="contact-big-phone">{company.phone}</a>
+    <a href={company.emailHref} class="contact-email">{company.email}</a>
+  </div>
+
+  <div class="contact-hours">
+    <h3>Heures d'ouverture</h3>
+    <p set:html={company.hours.replace(/\n/g, '<br />')} />
+  </div>
+
+  {filtered.map((o) => <OfficeLocation office={o} mapHeight={mapHeight} />)}
+</div>

@@ -1,0 +1,22 @@
+---
+export interface Props {
+  name: string;
+  credentials?: string;
+  role: string;
+  bio: string;
+  photo?: string;
+  mascot?: boolean;
+}
+
+const { name, credentials, role, bio, photo, mascot = false } = Astro.props;
+const displayName = credentials ? `${name}, ${credentials}` : name;
+---
+
+<div class:list={['team-card', mascot && 'team-card-mascot']}>
+  <div class:list={['team-photo', !photo && 'no-photo']}>
+    {photo && <img src={photo} alt={name} loading="lazy" width="400" height="400" />}
+  </div>
+  <h3>{displayName}</h3>
+  <p class="team-title">{role}</p>
+  <p class="team-bio">{bio}</p>
+</div>

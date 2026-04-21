@@ -1,0 +1,48 @@
+---
+import { getEntry, getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroInternal from '../components/sections/HeroInternal.astro';
+import TeamCard from '../components/cards/TeamCard.astro';
+import CtaBlock from '../components/sections/CtaBlock.astro';
+
+const entry = await getEntry('pages', 'notre-equipe');
+if (!entry) throw new Error('Missing pages/notre-equipe.md');
+const d = entry.data;
+
+const members = (await getCollection('team')).sort(
+  (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99)
+);
+---
+
+<BaseLayout title={d.title} description={d.description} headerSolid>
+  <HeroInternal
+    title={d.heroTitle}
+    subtitle={d.heroSubtitle}
+    image={d.heroImage}
+    imageWebp={d.heroImageWebp}
+    imageAlt={d.heroImageAlt}
+    breadcrumb={[{ label: 'Notre équipe' }]}
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="team-grid">
+        {members.map((m) => (
+          <TeamCard
+            name={m.data.name}
+            credentials={m.data.credentials}
+            role={m.data.role}
+            bio={m.data.bio}
+            photo={m.data.photo}
+            mascot={m.data.mascot}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBlock
+    title="Rencontrez-nous"
+    subtitle="Prenez rendez-vous pour une première consultation. On prend le temps de vous écouter."
+  />
+</BaseLayout>

@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroInternal from '../components/sections/HeroInternal.astro';
+import ContactForm from '../components/forms/ContactForm.astro';
+import ContactInfo from '../components/contact/ContactInfo.astro';
+
+const title = 'Nous joindre | AUDEX Avocats — Prenez rendez-vous';
+const description = "Contactez AUDEX Avocats. Prenez rendez-vous pour une première consultation à tarif fixe. Bureaux à Québec et Donnacona. 418-462-1010.";
+---
+
+<BaseLayout title={title} description={description} headerSolid>
+  <HeroInternal
+    title="Prenez rendez-vous — c'est la première étape."
+    subtitle="Première consultation à tarif fixe. On vous écoute avant tout."
+    breadcrumb={[{ label: 'Nous joindre' }]}
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="contact-grid">
+        <ContactForm />
+        <ContactInfo mapHeight={200} />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

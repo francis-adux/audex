@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroInternal from '../components/sections/HeroInternal.astro';
+import ServicesGrid from '../components/sections/ServicesGrid.astro';
+import ContactInfo from '../components/contact/ContactInfo.astro';
+import FAQ from '../components/sections/FAQ.astro';
+import CtaBlock from '../components/sections/CtaBlock.astro';
+import { services } from '../data/services';
+
+const title = 'Avocat à Québec | AUDEX Avocats — Bureau René-Lévesque';
+const description = "Avocat à Québec ville. AUDEX Avocats offre des services en droit familial, criminel, commercial et civil depuis 2013. Bureau au 1075, boul. René-Lévesque Ouest. 418-462-1010.";
+
+const faq = [
+  { question: "Où se trouve le bureau d'AUDEX Avocats à Québec?", answer: "Notre bureau de Québec est situé au 1075, boulevard René-Lévesque Ouest, bureau 400, Québec (Québec) G1S 0E1. Nous sommes facilement accessibles en voiture et en transport en commun. Un stationnement est disponible sur place." },
+  { question: "Quels services offre AUDEX Avocats à Québec?", answer: "Notre bureau de Québec offre l'ensemble de nos champs de pratique : droit familial, médiation familiale, droit civil général, droit commercial et de l'entreprise, droit criminel et pénal, droit administratif, droit municipal, droit de l'emploi et du travail, et droit de la jeunesse. Tous nos avocats sont disponibles pour vous recevoir à Québec." },
+  { question: "Comment prendre rendez-vous avec un avocat à Québec?", answer: "Vous pouvez nous joindre par téléphone au 418-462-1010, par courriel à info@avoc.ca ou en remplissant le formulaire sur notre page Nous joindre. Nous offrons une première consultation à tarif fixe pour évaluer votre situation et vous proposer un plan d'action clair." },
+  { question: "Quelles sont les heures d'ouverture du bureau de Québec?", answer: "Notre bureau de Québec est ouvert du lundi au vendredi, de 8 h 30 à 17 h. Nous offrons aussi des rendez-vous en soirée et les fins de semaine sur demande, selon la disponibilité de nos avocats." },
+  { question: "AUDEX Avocats offre-t-il des consultations en ligne pour les clients de Québec?", answer: "Oui. En plus de nos rencontres en personne au bureau de Québec, nous offrons des consultations par téléphone et par visioconférence pour votre commodité. Contactez-nous pour planifier une consultation dans le format qui vous convient." },
+];
+---
+
+<BaseLayout title={title} description={description} headerSolid>
+  <HeroInternal
+    title="Votre avocat à Québec — accessible et à l'écoute"
+    subtitle="Bureau au 1075, boul. René-Lévesque Ouest. Première consultation à tarif fixe."
+    breadcrumb={[{ label: 'Avocat à Québec' }]}
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="about-content">
+        <h2>Un cabinet d'avocats ancré dans la communauté de Québec</h2>
+        <p>Depuis 2013, AUDEX Avocats accompagne les citoyens et les entreprises de la ville de Québec dans leurs démarches juridiques. Notre bureau, situé sur le boulevard René-Lévesque Ouest, est facilement accessible et offre un environnement professionnel où vous pouvez discuter de votre situation en toute confidentialité.</p>
+        <p>Que vous habitiez Sainte-Foy, Cap-Rouge, Charlesbourg, Beauport, Limoilou ou le Vieux-Québec, notre équipe est à quelques minutes de chez vous. Nous desservons l'ensemble de la grande région de Québec et de la Capitale-Nationale.</p>
+        <p>Notre approche se distingue par l'écoute et l'accessibilité. Chez Audex, vous n'êtes pas un numéro de dossier — vous êtes une personne qui mérite d'être entendue et bien conseillée.</p>
+      </div>
+    </div>
+  </section>
+
+  <ServicesGrid
+    title="Nos champs de pratique à Québec"
+    subtitle="Notre équipe d'avocats couvre un large éventail de domaines juridiques pour répondre à vos besoins."
+    services={services}
+    showBlurb
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="contact-grid" style="grid-template-columns: 1fr;">
+        <ContactInfo showOffices="quebec" mapHeight={300} />
+      </div>
+    </div>
+  </section>
+
+  <FAQ title="Questions fréquentes — Avocat à Québec" items={faq} />
+
+  <CtaBlock title="Prenez rendez-vous à notre bureau de Québec" />
+</BaseLayout>

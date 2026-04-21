@@ -1,0 +1,74 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import HeroInternal from '../components/sections/HeroInternal.astro';
+import ServiceOfferings from '../components/sections/ServiceOfferings.astro';
+import TestimonialSingle from '../components/sections/TestimonialSingle.astro';
+import FAQ from '../components/sections/FAQ.astro';
+import CtaBlock from '../components/sections/CtaBlock.astro';
+import ServicesConnexes from '../components/sections/ServicesConnexes.astro';
+
+export interface Props {
+  title: string;
+  shortTitle: string;
+  seoTitle: string;
+  seoDescription: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  heroImage?: string;
+  heroImageWebp?: string;
+  heroImageAlt?: string;
+  introTitle: string;
+  offeringsTitle?: string;
+  offeringsSubtitle?: string;
+  offerings: { title: string; description: string }[];
+  highlight?: { title: string; description: string };
+  testimonial?: { quote: string; author?: string };
+  faq: { question: string; answer: string }[];
+  ctaText?: string;
+  relatedServices?: string[];
+}
+
+const props = Astro.props;
+---
+
+<BaseLayout title={props.seoTitle} description={props.seoDescription} headerSolid>
+  <HeroInternal
+    title={props.heroTitle}
+    subtitle={props.heroSubtitle}
+    image={props.heroImage}
+    imageWebp={props.heroImageWebp}
+    imageAlt={props.heroImageAlt}
+    breadcrumb={[
+      { label: 'Nos services', href: '/#services' },
+      { label: props.shortTitle },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container-audex">
+      <div class="about-content">
+        <h2>{props.introTitle}</h2>
+        <slot name="intro" />
+      </div>
+    </div>
+  </section>
+
+  <ServiceOfferings
+    title={props.offeringsTitle}
+    subtitle={props.offeringsSubtitle}
+    offerings={props.offerings}
+    highlight={props.highlight}
+  />
+
+  {props.testimonial && (
+    <TestimonialSingle quote={props.testimonial.quote} author={props.testimonial.author} />
+  )}
+
+  <FAQ items={props.faq} />
+
+  <CtaBlock title={props.ctaText} />
+
+  {props.relatedServices && props.relatedServices.length > 0 && (
+    <ServicesConnexes slugs={props.relatedServices} />
+  )}
+</BaseLayout>

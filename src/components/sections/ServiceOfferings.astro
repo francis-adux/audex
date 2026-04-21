@@ -1,0 +1,35 @@
+---
+import OfferingCard from '../cards/OfferingCard.astro';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  offerings: { title: string; description: string }[];
+  highlight?: { title: string; description: string };
+}
+
+const {
+  title = "Ce qu'Audex peut faire pour vous",
+  subtitle,
+  offerings,
+  highlight,
+} = Astro.props;
+---
+
+<section class="section section-light">
+  <div class="container-audex">
+    <div class="section-header">
+      <h2>{title}</h2>
+      {subtitle && <p>{subtitle}</p>}
+    </div>
+    <div class="service-offerings">
+      {offerings.map((o) => <OfferingCard title={o.title} description={o.description} />)}
+    </div>
+    {highlight && (
+      <div class="service-highlight">
+        <strong>{highlight.title}</strong>
+        <span>{highlight.description}</span>
+      </div>
+    )}
+  </div>
+</section>

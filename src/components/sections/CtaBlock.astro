@@ -1,0 +1,24 @@
+---
+import { company } from '../../data/company';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = 'Discutez de votre situation avec un avocat',
+  subtitle = 'Première consultation à tarif fixe. Confidentiel. Sans surprise.',
+} = Astro.props;
+---
+
+<section class="section">
+  <div class="container-audex">
+    <div class="cta-block">
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+      <a href="/nous-joindre" class="btn btn-gold btn-lg">Planifier une consultation</a>
+      <p class="mt-1 hero-phone">ou appelez le <a href={company.phoneHref}>{company.phone}</a></p>
+    </div>
+  </div>
+</section>
