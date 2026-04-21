@@ -1,0 +1,29 @@
+---
+---
+
+<!-- Ce fichier sert uniquement à Netlify pour détecter les formulaires à la build -->
+<!-- Chaque formulaire de landing doit être déclaré ici avec data-netlify="true" -->
+<!-- Voir README.md section "Ajouter une nouvelle landing page" -->
+
+<html>
+<body>
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="nom" />
+    <input type="email" name="email" />
+    <input type="tel" name="telephone" />
+    <select name="sujet"><option value=""></option></select>
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- Exemple: ajouter ici chaque nouveau formulaire de landing -->
+  <!--
+  <form name="landing-nom-de-la-landing" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="nom" />
+    <input type="email" name="email" />
+    <input type="tel" name="telephone" />
+    <input type="hidden" name="landing-source" />
+    <textarea name="message"></textarea>
+  </form>
+  -->
+</body>
+</html>

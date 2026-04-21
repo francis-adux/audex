@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact - Mon Site" description="Contactez-nous">
+  <section class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-4">Contactez-nous</h1>
+    <p class="text-gray-600 mb-8">
+      Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.
+    </p>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/merci"
+      class="space-y-6"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden">
+        <label>Ne pas remplir: <input name="bot-field" /></label>
+      </p>
+
+      <div>
+        <label for="nom" class="block text-sm font-medium mb-1">Nom complet</label>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          required
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium mb-1">Courriel</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand"
+        />
+      </div>
+
+      <div>
+        <label for="telephone" class="block text-sm font-medium mb-1">Téléphone</label>
+        <input
+          type="tel"
+          name="telephone"
+          id="telephone"
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand"
+        />
+      </div>
+
+      <div>
+        <label for="sujet" class="block text-sm font-medium mb-1">Sujet</label>
+        <select
+          name="sujet"
+          id="sujet"
+          required
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand"
+        >
+          <option value="">Choisir un sujet</option>
+          <option value="information">Demande d'information</option>
+          <option value="soumission">Demande de soumission</option>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium mb-1">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="6"
+          required
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-brand"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition"
+      >
+        Envoyer
+      </button>
+    </form>
+  </section>
+</BaseLayout>

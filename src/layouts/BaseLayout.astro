@@ -1,0 +1,52 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = 'Site propulsé par Astro et Netlify', image } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {image && <meta property="og:image" content={image} />}
+  </head>
+  <body class="min-h-screen bg-white text-gray-900 font-sans antialiased">
+    <header class="border-b border-gray-200">
+      <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="text-xl font-bold text-brand">Mon Site</a>
+        <div class="flex gap-6">
+          <a href="/" class="hover:text-brand">Accueil</a>
+          <a href="/blog" class="hover:text-brand">Blogue</a>
+          <a href="/contact" class="hover:text-brand">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="border-t border-gray-200 mt-16">
+      <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600">
+        <p>© {new Date().getFullYear()} Mon Site. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
