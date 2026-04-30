@@ -29,9 +29,6 @@ offerings:
 highlight:
   title: "Votre emploi, c'est votre gagne-pain — on le défend"
   description: "On représente exclusivement les travailleurs, pas les employeurs. Votre intérêt est le seul qui compte pour nous."
-testimonial:
-  quote: "Après un congédiement que je trouvais complètement injuste, Audex m'a aidé à comprendre mes droits et à obtenir une compensation juste. Leur approche humaine a fait toute la différence dans un moment très difficile pour moi."
-  author: "Client(e) vérifié(e)"
 faq:
   - question: "Qu'est-ce qu'un congédiement sans cause juste et suffisante au Québec?"
     answer: "<p>Un congédiement sans cause juste et suffisante survient lorsqu'un employeur met fin à l'emploi d'un salarié sans motif valable. Au Québec, si vous avez deux ans ou plus de service continu, vous bénéficiez d'une protection contre ce type de congédiement en vertu de la Loi sur les normes du travail. Vous pouvez alors déposer une plainte à la CNESST. Chez AUDEX, on vous aide à évaluer si votre congédiement était justifié et à faire valoir vos droits.</p>"

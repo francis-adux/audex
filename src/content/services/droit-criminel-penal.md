@@ -31,9 +31,6 @@ offerings:
 highlight:
   title: "Disponible en urgence — même le soir et les fins de semaine"
   description: "Une accusation n'attend pas les heures de bureau. On répond rapidement quand ça compte le plus."
-testimonial:
-  quote: "J'étais très inquiet quand j'ai reçu mon accusation. Mon avocat chez AUDEX a été disponible rapidement et m'a tout expliqué clairement. Il a analysé la preuve en détail et a obtenu un excellent résultat. Je le recommande sans hésitation."
-  author: "Client vérifié"
 faq:
   - question: "Que faire si je reçois une accusation criminelle au Québec?"
     answer: "La première chose à faire est de consulter un avocat criminaliste le plus rapidement possible. Ne faites aucune déclaration à la police sans avoir parlé à votre avocat. Conservez tous les documents liés à votre accusation (promesse de comparaître, conditions de remise en liberté, etc.). Chez AUDEX Avocats, nous offrons des consultations rapides pour analyser votre situation, vous expliquer les accusations portées contre vous et préparer votre défense."

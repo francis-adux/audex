@@ -2,8 +2,8 @@
 import { getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroInternal from '../components/sections/HeroInternal.astro';
+import ValuesSection from '../components/sections/ValuesSection.astro';
 import TrustBar from '../components/sections/TrustBar.astro';
-import TestimonialSingle from '../components/sections/TestimonialSingle.astro';
 import CtaBlock from '../components/sections/CtaBlock.astro';
 
 const entry = await getEntry('pages', 'le-cabinet');
@@ -30,6 +30,8 @@ const d = entry.data;
     </div>
   </section>
 
+  <ValuesSection />
+
   <TrustBar items={[
     { type: 'year', label: 'Fondé en 2013' },
     { type: 'offices', label: '2 bureaux' },
@@ -37,10 +39,6 @@ const d = entry.data;
     { type: 'mediation', label: 'Médiation familiale accréditée' },
     { type: 'bilingue', label: 'Français et anglais' },
   ]} />
-
-  <TestimonialSingle
-    quote="J'ai été accompagnée lors d'un moment particulièrement difficile de ma vie. Leur équipe a su rendre le processus plus simple, mais surtout beaucoup plus léger à vivre."
-  />
 
   <CtaBlock title="Discutez de votre situation avec notre équipe" />
 </BaseLayout>

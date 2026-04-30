@@ -29,9 +29,6 @@ offerings:
 highlight:
   title: "Ancrés dans la région de Québec et Portneuf"
   description: "On connaît les municipalités locales, leurs règlements et leur fonctionnement — cette proximité fait toute la différence pour faire avancer votre dossier."
-testimonial:
-  quote: "Ma demande de permis avait été refusée et je ne comprenais pas pourquoi. Audex a pris le temps de m'expliquer la situation et a trouvé une solution que je n'aurais jamais envisagée seul. Très professionnel et humain."
-  author: "Client(e) vérifié(e)"
 faq:
   - question: "Comment contester un règlement municipal au Québec?"
     answer: "<p>Il est possible de contester un règlement municipal en démontrant qu'il est déraisonnable, discriminatoire ou qu'il dépasse les compétences de la municipalité. Le recours se fait généralement devant la Cour supérieure du Québec. C'est un processus qui demande une analyse juridique approfondie. Chez AUDEX, on évalue d'abord si vous avez des motifs valables, puis on vous guide dans les étapes à suivre.</p>"

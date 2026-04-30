@@ -31,9 +31,6 @@ offerings:
 highlight:
   title: "Une seule équipe pour tous vos besoins en droit civil"
   description: "Pas besoin de chercher un avocat différent pour chaque problème — on couvre l'ensemble du droit civil avec la même rigueur."
-testimonial:
-  quote: "J'ai contacté AUDEX pour un problème de vices cachés après l'achat de ma maison. Mon avocat a pris le temps de bien analyser mon dossier et a négocié une entente très favorable. Service professionnel et humain, je recommande à 100%."
-  author: "Client vérifié"
 faq:
   - question: "Comment envoyer une mise en demeure au Québec?"
     answer: "Une mise en demeure est une lettre formelle qui demande à une personne ou une entreprise de respecter ses obligations dans un délai précis. Elle doit exposer les faits, les fondements juridiques et le remède demandé. Bien qu'il soit possible de la rédiger soi-même, une mise en demeure rédigée par un avocat a beaucoup plus de poids. Chez AUDEX Avocats, nous rédigeons des mises en demeure claires et efficaces pour protéger vos droits et maximiser vos chances de résolution rapide."

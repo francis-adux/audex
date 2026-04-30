@@ -29,9 +29,6 @@ offerings:
 highlight:
   title: "On connaît le système de l'intérieur"
   description: "Notre équipe maîtrise le fonctionnement des organismes gouvernementaux québécois — on sait comment ils pensent, et on sait comment les faire bouger."
-testimonial:
-  quote: "Je ne savais pas comment contester la décision que j'avais reçue. L'équipe d'Audex m'a expliqué mes droits clairement et m'a accompagné tout au long du processus. Je me suis senti écouté et soutenu du début à la fin."
-  author: "Client(e) vérifié(e)"
 faq:
   - question: "Comment contester une décision d'un organisme gouvernemental au Québec?"
     answer: "<p>Vous pouvez contester une décision administrative en déposant un recours devant le tribunal administratif compétent, comme le Tribunal administratif du Québec (TAQ). Il est important d'agir rapidement, car les délais de contestation sont souvent courts — parfois aussi peu que 30 jours. Chez AUDEX, on vous aide à comprendre vos options et à préparer un dossier solide pour faire valoir vos droits.</p>"

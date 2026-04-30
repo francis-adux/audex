@@ -2,8 +2,7 @@
 title: "Le cabinet | AUDEX Avocats — Accessibles depuis 2013"
 description: "AUDEX Avocats, cabinet juridique fondé en 2013 à Québec et Portneuf. Une équipe humaine, accessible et engagée à vos côtés."
 heroTitle: "Une équipe à votre écoute depuis 2013"
-heroImage: "/images/equipe-groupe.png"
-heroImageWebp: "/images/equipe-groupe.webp"
+heroImage: "/images/banniere-audex-cabinet.png"
 heroImageAlt: "L'équipe AUDEX Avocats"
 ---
 

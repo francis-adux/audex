@@ -29,9 +29,6 @@ offerings:
 highlight:
   title: "L'intérêt de votre enfant, notre priorité absolue"
   description: "On aborde chaque dossier avec la sensibilité qu'il mérite — parce que derrière chaque dossier, il y a une famille qui a besoin d'être entendue."
-testimonial:
-  quote: "Quand la DPJ est intervenue, j'étais complètement perdu et effrayé. L'équipe d'Audex m'a accompagné avec beaucoup d'humanité et de professionnalisme. Ils m'ont aidé à comprendre mes droits et à traverser cette épreuve. Je leur serai toujours reconnaissant."
-  author: "Client(e) vérifié(e)"
 faq:
   - question: "Qu'est-ce que la Loi sur la protection de la jeunesse au Québec?"
     answer: "<p>La Loi sur la protection de la jeunesse (LPJ) est une loi québécoise qui vise à protéger les enfants dont la sécurité ou le développement est compromis. Elle encadre l'intervention de la Direction de la protection de la jeunesse (DPJ) et prévoit des mesures allant de l'aide volontaire au placement de l'enfant. La loi donne aussi des droits importants aux parents et aux enfants. Chez AUDEX, on vous aide à comprendre cette loi et à faire valoir vos droits à chaque étape du processus.</p>"

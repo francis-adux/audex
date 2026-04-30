@@ -27,9 +27,6 @@ offerings:
 highlight:
   title: "Première consultation à tarif fixe"
   description: "On évalue votre situation, on vous explique vos options et on vous donne un plan d'action clair — sans surprise."
-testimonial:
-  quote: "Mon avocat chez AUDEX m'a accompagnée tout au long de mon divorce avec beaucoup d'empathie et de professionnalisme. Je me suis sentie écoutée et bien conseillée à chaque étape. Je recommande sans hésitation."
-  author: "Cliente vérifiée"
 faq:
   - question: "Combien coûte un avocat pour un divorce au Québec?"
     answer: "Les honoraires varient selon la complexité de votre dossier. Un divorce à l'amiable coûte généralement moins cher qu'un divorce contesté. Chez AUDEX Avocats, nous offrons une première consultation pour évaluer votre situation et vous donner une estimation réaliste des coûts. Nous pouvons aussi convenir d'un forfait ou d'un tarif horaire adapté à votre budget. N'hésitez pas à nous contacter pour en discuter."

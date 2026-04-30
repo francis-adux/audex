@@ -22,6 +22,10 @@ const filtered = offices.filter((o) => {
 <div class="contact-info-wrap">
   <div class="contact-phone-block">
     <a href={company.phoneHref} class="contact-big-phone">{company.phone}</a>
+    <p class="contact-phone-label">Téléphone et texto</p>
+    {company.fax && (
+      <p class="contact-fax">Télécopieur : {company.fax}</p>
+    )}
     <a href={company.emailHref} class="contact-email">{company.email}</a>
   </div>
 
@@ -39,3 +43,17 @@ const filtered = offices.filter((o) => {
 
   {filtered.map((o) => <OfficeLocation office={o} mapHeight={mapHeight} />)}
 </div>
+
+<style>
+  .contact-phone-label {
+    font-size: 0.85rem;
+    color: #777;
+    margin: -0.25rem 0 0.5rem;
+    letter-spacing: 0.02em;
+  }
+  .contact-fax {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+</style>

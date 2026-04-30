@@ -48,7 +48,7 @@ Vous pouvez, en tout temps :
 - Demander la correction d'un renseignement inexact
 - Demander le retrait ou la destruction de vos renseignements, sous réserve des obligations légales et déontologiques applicables
 
-Pour exercer ces droits, contactez-nous par courriel à **info@avoc.ca** ou par téléphone au **418-462-1010**.
+Pour exercer ces droits, contactez-nous par courriel à **avocats@avoc.ca** ou par téléphone au **418-462-1010**.
 
 ## Modifications
 
@@ -56,4 +56,4 @@ La présente politique peut être modifiée. La version en vigueur est toujours 
 
 ## Questions
 
-Pour toute question concernant la présente politique, contactez-nous au **418-462-1010** ou à **info@avoc.ca**.
+Pour toute question concernant la présente politique, contactez-nous au **418-462-1010** ou à **avocats@avoc.ca**.

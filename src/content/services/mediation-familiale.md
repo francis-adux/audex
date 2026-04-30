@@ -29,9 +29,6 @@ offerings:
 highlight:
   title: "Jusqu'à 5 heures gratuites payées par le gouvernement"
   description: "Les couples avec enfants ont droit à des heures de médiation subventionnées par l'État — on s'assure que vous en profitez au maximum."
-testimonial:
-  quote: "La médiation avec AUDEX nous a permis de nous entendre sur la garde et la pension sans aller au tribunal. Le médiateur était vraiment neutre et nous a aidés à communiquer calmement. On a réglé ça en quelques séances seulement."
-  author: "Client vérifié"
 faq:
   - question: "La médiation familiale est-elle gratuite au Québec?"
     answer: "Oui, en partie. Le gouvernement du Québec offre jusqu'à 5 heures de médiation familiale gratuites pour les couples avec enfants communs qui se séparent. Ces heures sont payées par le ministère de la Justice. Chez AUDEX Avocats, notre médiateur accrédité vous accompagne dans ce processus et vous aide à profiter pleinement de ces heures subventionnées. Si des heures supplémentaires sont nécessaires, nous vous informerons des coûts à l'avance."

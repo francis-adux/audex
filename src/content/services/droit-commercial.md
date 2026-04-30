@@ -31,9 +31,6 @@ offerings:
 highlight:
   title: "On parle votre langage d'entrepreneur"
   description: "Pas de jargon inutile — des conseils pratiques et directs, adaptés à la réalité des PME de la région de Québec."
-testimonial:
-  quote: "AUDEX m'a accompagné dans l'incorporation de mon entreprise et la rédaction de ma convention d'actionnaires. L'avocat a pris le temps de m'expliquer chaque détail et m'a donné des conseils concrets pour protéger mon entreprise. Un vrai partenaire d'affaires."
-  author: "Client vérifié"
 faq:
   - question: "Comment incorporer une entreprise au Québec?"
     answer: "L'incorporation consiste à créer une personne morale distincte de vous. Au Québec, vous pouvez incorporer au provincial (Registraire des entreprises) ou au fédéral (Corporations Canada). Le processus implique le choix d'un nom, la rédaction des statuts constitutifs et l'adoption des règlements internes. AUDEX Avocats s'occupe de toutes ces étapes pour vous, en s'assurant que la structure choisie correspond à vos objectifs d'affaires et protège vos intérêts."
