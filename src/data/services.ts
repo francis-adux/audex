@@ -36,6 +36,22 @@ export const services: ServiceEntry[] = [
     blurb: "Résolution à l'amiable",
   },
   {
+    slug: 'droit-criminel-penal',
+    title: 'Droit criminel et pénal',
+    shortTitle: 'Droit criminel et pénal',
+    navTitle: 'Droit criminel et pénal',
+    icon: 'criminal',
+    blurb: 'Défense criminelle et pénale',
+  },
+  {
+    slug: 'droit-jeunesse',
+    title: 'Droit de la jeunesse',
+    shortTitle: 'Droit de la jeunesse',
+    navTitle: 'Droit de la jeunesse',
+    icon: 'youth',
+    blurb: 'Protection de la jeunesse et DPJ',
+  },
+  {
     slug: 'droit-civil-general',
     title: 'Droit civil général',
     shortTitle: 'Droit civil général',
@@ -50,14 +66,6 @@ export const services: ServiceEntry[] = [
     navTitle: 'Droit commercial',
     icon: 'commercial',
     blurb: 'Entreprises et transactions',
-  },
-  {
-    slug: 'droit-criminel-penal',
-    title: 'Droit criminel et pénal',
-    shortTitle: 'Droit criminel et pénal',
-    navTitle: 'Droit criminel et pénal',
-    icon: 'criminal',
-    blurb: 'Défense criminelle et pénale',
   },
   {
     slug: 'droit-administratif',
@@ -82,13 +90,5 @@ export const services: ServiceEntry[] = [
     navTitle: "Droit de l'emploi",
     icon: 'employment',
     blurb: 'Relations de travail et congédiement',
-  },
-  {
-    slug: 'droit-jeunesse',
-    title: 'Droit de la jeunesse',
-    shortTitle: 'Droit de la jeunesse',
-    navTitle: 'Droit de la jeunesse',
-    icon: 'youth',
-    blurb: 'Protection de la jeunesse et DPJ',
   },
 ];

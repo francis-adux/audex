@@ -11,7 +11,7 @@ export interface Props {
 const defaultItems: TrustItem[] = [
   { type: 'year', label: 'Depuis 2013' },
   { type: 'offices', label: '2 bureaux' },
-  { type: 'reviews', label: '61 avis Google' },
+  { type: 'reviews', label: 'Plus de 60 avis Google' },
   { type: 'practice', label: '10+ champs de pratique' },
   { type: 'barreau', label: 'Barreau du Québec' },
 ];
@@ -30,7 +30,7 @@ const { items = defaultItems } = Astro.props;
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         )}
         {item.type === 'reviews' && (
-          <span class="stars" aria-label="5 étoiles sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         )}
         {item.type === 'practice' && (
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>

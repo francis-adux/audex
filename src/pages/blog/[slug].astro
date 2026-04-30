@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroInternal from '../../components/sections/HeroInternal.astro';
+import CtaBlock from '../../components/sections/CtaBlock.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -12,35 +14,157 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+const formatDate = (d: Date) =>
+  d.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
-  <article class="max-w-3xl mx-auto px-4 py-16">
-    <header class="mb-8">
-      <time class="text-sm text-gray-500">
-        {post.data.publishDate.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
-      </time>
-      <h1 class="text-4xl font-bold mt-2 mb-4">{post.data.title}</h1>
-      <p class="text-xl text-gray-600">{post.data.description}</p>
-      <p class="text-sm text-gray-500 mt-4">Par {post.data.author}</p>
-    </header>
+<BaseLayout
+  title={`${post.data.title} | AUDEX Avocats`}
+  description={post.data.description}
+  image={post.data.image}
+  headerSolid
+>
+  <HeroInternal
+    title={post.data.title}
+    breadcrumb={[
+      { label: 'Articles', href: '/blog' },
+      { label: post.data.title },
+    ]}
+  />
 
-    {post.data.image && (
-      <img src={post.data.image} alt={post.data.title} class="w-full rounded-lg mb-8" />
-    )}
-
-    <div class="prose prose-lg max-w-none">
-      <Content />
-    </div>
-
-    {post.data.tags.length > 0 && (
-      <div class="mt-12 pt-8 border-t border-gray-200">
-        <div class="flex flex-wrap gap-2">
-          {post.data.tags.map((tag) => (
-            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm">{tag}</span>
-          ))}
+  <article class="section">
+    <div class="container-audex">
+      <div class="blog-post">
+        <div class="blog-post-meta">
+          <time datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time>
+          <span class="separator">·</span>
+          <span>Par {post.data.author}</span>
         </div>
+
+        {post.data.image && (
+          <img src={post.data.image} alt={post.data.title} class="blog-post-image" />
+        )}
+
+        <p class="blog-post-lead">{post.data.description}</p>
+
+        <div class="blog-post-content">
+          <Content />
+        </div>
+
+        {post.data.tags && post.data.tags.length > 0 && (
+          <div class="blog-post-tags">
+            {post.data.tags.map((tag) => (
+              <span class="blog-tag">{tag}</span>
+            ))}
+          </div>
+        )}
       </div>
-    )}
+    </div>
   </article>
+
+  <CtaBlock title="Une question sur votre situation?" />
 </BaseLayout>
+
+<style>
+  .blog-post {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .blog-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 2rem;
+  }
+  .blog-post-meta .separator {
+    color: var(--color-border);
+  }
+  .blog-post-image {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+  }
+  .blog-post-lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    font-style: italic;
+    border-left: 3px solid var(--color-gold);
+    padding-left: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .blog-post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text);
+  }
+  .blog-post-content :global(h2) {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+  }
+  .blog-post-content :global(h3) {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+  }
+  .blog-post-content :global(p) {
+    margin-bottom: 1.25rem;
+  }
+  .blog-post-content :global(ul),
+  .blog-post-content :global(ol) {
+    margin: 0 0 1.5rem 1.5rem;
+    padding-left: 0;
+    list-style-position: outside;
+  }
+  .blog-post-content :global(ul) {
+    list-style: disc;
+  }
+  .blog-post-content :global(ol) {
+    list-style: decimal;
+  }
+  .blog-post-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  .blog-post-content :global(a) {
+    color: var(--color-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .blog-post-content :global(blockquote) {
+    border-left: 4px solid var(--color-gold);
+    background: var(--color-light);
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .blog-post-content :global(hr) {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    margin: 2.5rem 0;
+  }
+  .blog-post-content :global(strong) {
+    color: var(--color-navy);
+  }
+  .blog-post-tags {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .blog-tag {
+    background: var(--color-light);
+    color: var(--color-navy);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+</style>

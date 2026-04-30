@@ -7,10 +7,7 @@ import { company } from '../../data/company';
     <div class="reviews-cta-inner">
       <p class="eyebrow">Témoignages</p>
       <h2>Ce que disent nos clients</h2>
-      <div class="reviews-rating">
-        <span class="stars" aria-label={`5 étoiles sur 5 — ${company.reviewCount} avis Google`}>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span class="reviews-count">5/5 — {company.reviewCount} avis Google</span>
-      </div>
+      <p class="reviews-count">Plus de 60 avis Google</p>
 
       <a href={company.googleReviewsUrl} class="btn btn-gold btn-lg reviews-btn" target="_blank" rel="noopener">
         Consulter nos avis Google
@@ -41,22 +38,11 @@ import { company } from '../../data/company';
   .reviews-cta h2 {
     margin-bottom: 1.25rem;
   }
-  .reviews-rating {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
-    margin-bottom: 2rem;
-  }
-  .reviews-rating .stars {
-    color: var(--color-gold);
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-  }
   .reviews-count {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-navy);
+    margin-bottom: 2rem;
   }
   .reviews-btn {
     margin-bottom: 1rem;

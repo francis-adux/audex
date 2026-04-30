@@ -1,63 +1,73 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import HeroInternal from '../../components/sections/HeroInternal.astro';
-import CtaBlock from '../../components/sections/CtaBlock.astro';
 import { getCollection } from 'astro:content';
 
+export interface Props {
+  limit?: number;
+  title?: string;
+  subtitle?: string;
+}
+
+const { limit = 3, title = 'Derniers articles', subtitle = "Notre équipe partage régulièrement des analyses pour vulgariser le droit." } = Astro.props;
+
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, limit);
 
 const formatDate = (d: Date) =>
   d.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
-<BaseLayout
-  title="Articles | AUDEX Avocats — Blogue juridique"
-  description="Articles d'analyse juridique signés par l'équipe d'AUDEX Avocats. Droit familial, criminel, civil, commercial et plus. Une approche humaine du droit."
-  headerSolid
->
-  <HeroInternal
-    title="Articles juridiques"
-    subtitle="Notre équipe partage régulièrement des analyses pour vulgariser le droit et vous aider à mieux comprendre vos options."
-    breadcrumb={[{ label: 'Articles' }]}
-  />
-
-  <section class="section">
+{posts.length > 0 && (
+  <section class="section latest-blog" id="derniers-articles">
     <div class="container-audex">
-      {posts.length === 0 ? (
-        <p style="text-align:center; color:#666;">Aucun article publié pour le moment.</p>
-      ) : (
-        <div class="blog-archive">
-          {posts.map((post) => (
-            <a href={`/blog/${post.slug}`} class="blog-card">
-              {post.data.image && (
-                <div class="blog-card-image">
-                  <img src={post.data.image} alt={post.data.title} loading="lazy" />
-                </div>
-              )}
-              <div class="blog-card-body">
-                <div class="blog-card-meta">
-                  <time datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time>
-                  {post.data.tags && post.data.tags.length > 0 && (
-                    <span class="blog-card-tag">{post.data.tags[0]}</span>
-                  )}
-                </div>
-                <h2>{post.data.title}</h2>
-                <p>{post.data.description}</p>
-                <span class="blog-card-link">Lire l'article →</span>
+      <div class="section-header">
+        <p class="eyebrow">Blogue</p>
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+      </div>
+
+      <div class="blog-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.slug}`} class="blog-card">
+            {post.data.image && (
+              <div class="blog-card-image">
+                <img src={post.data.image} alt={post.data.title} loading="lazy" />
               </div>
-            </a>
-          ))}
-        </div>
-      )}
+            )}
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time>
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <span class="blog-card-tag">{post.data.tags[0]}</span>
+                )}
+              </div>
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+              <span class="blog-card-link">Lire l'article →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-3">
+        <a href="/blog" class="btn btn-outline-dark">Voir tous les articles</a>
+      </div>
     </div>
   </section>
-
-  <CtaBlock title="Une question juridique vous préoccupe?" />
-</BaseLayout>
+)}
 
 <style>
-  .blog-archive {
+  .eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+  }
+  .blog-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -113,8 +123,8 @@ const formatDate = (d: Date) =>
     font-weight: 600;
     font-size: 0.7rem;
   }
-  .blog-card h2 {
-    font-size: 1.2rem;
+  .blog-card h3 {
+    font-size: 1.15rem;
     margin-bottom: 0.6rem;
     line-height: 1.3;
   }
@@ -129,14 +139,19 @@ const formatDate = (d: Date) =>
     color: var(--color-gold);
     font-weight: 600;
     font-size: 0.95rem;
+    transition: transform 0.2s ease;
+  }
+  .blog-card:hover .blog-card-link {
+    transform: translateX(3px);
+    display: inline-block;
   }
   @media (min-width: 640px) {
-    .blog-archive {
+    .blog-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   @media (min-width: 1024px) {
-    .blog-archive {
+    .blog-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
