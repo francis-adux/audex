@@ -7,39 +7,39 @@ import FAQ from '../components/sections/FAQ.astro';
 import CtaBlock from '../components/sections/CtaBlock.astro';
 import { services } from '../data/services';
 
-const title = 'Avocat à Portneuf | AUDEX Avocats — Bureau de Donnacona';
-const description = "Avocat dans la région de Portneuf. AUDEX Avocats dessert Donnacona, Pont-Rouge, Saint-Raymond, Cap-Santé et toute la MRC de Portneuf. 418-462-1010.";
+const title = "Avocat pour la MRC de Portneuf | AUDEX Avocats — Service à distance";
+const description = "Avocat pour la région de Portneuf. AUDEX Avocats accompagne Donnacona, Pont-Rouge, Saint-Raymond, Cap-Santé et toute la MRC par téléphone et visioconférence. 418-462-1010.";
 
 const faq = [
-  { question: "Où se trouve le bureau d'AUDEX Avocats dans Portneuf?", answer: "Notre bureau de Portneuf est situé au 155, rue de l'Église, Donnacona (Québec) G3M 0A3. Nous desservons l'ensemble de la MRC de Portneuf, incluant Donnacona, Pont-Rouge, Saint-Raymond, Cap-Santé, Neuville, Saint-Basile, Deschambault-Grondines et les municipalités environnantes." },
-  { question: "Quels services juridiques sont disponibles au bureau de Portneuf?", answer: "Notre bureau de Portneuf offre les mêmes services que notre bureau de Québec : droit familial, médiation familiale, droit civil, droit commercial, droit criminel et pénal, droit administratif, droit municipal, droit de l'emploi et droit de la jeunesse. Vous n'avez pas besoin de vous déplacer à Québec pour avoir accès à un avocat compétent." },
-  { question: "Est-ce que je peux consulter un avocat à Portneuf sans rendez-vous?", answer: "Nous fonctionnons sur rendez-vous pour vous garantir un temps de qualité avec votre avocat. Vous pouvez prendre rendez-vous en appelant le 418-462-1010 ou en remplissant notre formulaire en ligne. Nous faisons notre possible pour vous recevoir rapidement." },
-  { question: "Pourquoi choisir un avocat local dans Portneuf?", answer: "Choisir un avocat local dans Portneuf, c'est choisir un professionnel qui connaît votre communauté, le palais de justice de la région et les réalités locales. Chez AUDEX, notre présence à Donnacona nous permet d'offrir un service de proximité sans compromis sur la qualité. Vous évitez les déplacements à Québec tout en bénéficiant de l'expertise d'une équipe complète." },
-  { question: "AUDEX Avocats dessert-il Saint-Raymond et Pont-Rouge?", answer: "Oui, absolument. Notre bureau de Donnacona dessert l'ensemble de la MRC de Portneuf, incluant Saint-Raymond, Pont-Rouge, Cap-Santé, Neuville, Saint-Basile et toutes les municipalités de la région. Nous offrons aussi des consultations par téléphone et visioconférence pour votre commodité." },
+  { question: "Comment consulter un avocat d'AUDEX dans la région de Portneuf?", answer: "Toutes nos consultations pour la MRC de Portneuf se déroulent par téléphone ou visioconférence — vous n'avez pas à vous déplacer à Québec. Nous desservons Donnacona, Pont-Rouge, Saint-Raymond, Cap-Santé, Neuville, Saint-Basile, Deschambault-Grondines et les municipalités environnantes." },
+  { question: "Quels services juridiques sont disponibles pour les résidents de Portneuf?", answer: "Tous nos champs de pratique sont accessibles aux résidents de Portneuf : droit familial, médiation familiale, droit civil, droit commercial, droit criminel et pénal, droit administratif, droit municipal, droit de l'emploi et droit de la jeunesse. La consultation à distance vous donne accès à la même expertise que nos clients de Québec." },
+  { question: "Est-ce que je peux consulter un avocat sans me déplacer?", answer: "Absolument. Notre service est conçu pour s'adapter à votre horaire et à votre emplacement. Vous pouvez prendre rendez-vous en appelant le 418-462-1010 ou en remplissant notre formulaire en ligne. La consultation se déroule ensuite par téléphone ou Microsoft Teams, selon votre préférence." },
+  { question: "La consultation à distance est-elle aussi efficace qu'une rencontre en personne?", answer: "Oui. Pour la grande majorité des dossiers, la consultation à distance est tout aussi rigoureuse — et beaucoup plus pratique. Vous économisez le déplacement, votre dossier avance plus vite, et vous bénéficiez de la même écoute et des mêmes conseils que nos clients sur place." },
+  { question: "AUDEX Avocats dessert-il Saint-Raymond et Pont-Rouge?", answer: "Oui, absolument. Nous accompagnons l'ensemble de la MRC de Portneuf, incluant Saint-Raymond, Pont-Rouge, Cap-Santé, Neuville, Saint-Basile et toutes les municipalités de la région. Les consultations par téléphone et visioconférence vous évitent tout déplacement." },
 ];
 ---
 
 <BaseLayout title={title} description={description} headerSolid>
   <HeroInternal
-    title="Votre avocat dans Portneuf — un service de proximité"
-    subtitle="Bureau à Donnacona. Desservant Pont-Rouge, Saint-Raymond, Cap-Santé et toute la MRC de Portneuf."
+    title="Votre avocat pour la région de Portneuf"
+    subtitle="Service à distance pour Donnacona, Pont-Rouge, Saint-Raymond, Cap-Santé et toute la MRC de Portneuf. Première consultation à tarif fixe."
     breadcrumb={[{ label: 'Avocat à Portneuf' }]}
   />
 
   <section class="section">
     <div class="container-audex">
       <div class="about-content">
-        <h2>Un avocat accessible dans la région de Portneuf</h2>
-        <p>Les résidents de Portneuf n'ont plus besoin de se rendre à Québec pour consulter un avocat de confiance. Depuis l'ouverture de notre bureau à Donnacona, AUDEX Avocats offre un service juridique complet à l'ensemble de la MRC de Portneuf.</p>
+        <h2>Un avocat accessible aux résidents de Portneuf</h2>
+        <p>Pas besoin de se déplacer à Québec pour consulter un avocat de confiance. AUDEX Avocats offre un service juridique complet à l'ensemble de la MRC de Portneuf, par téléphone et visioconférence.</p>
         <p>Que vous soyez de Donnacona, Pont-Rouge, Saint-Raymond, Cap-Santé, Neuville ou Saint-Basile, notre équipe est à votre portée. Nous comprenons les réalités des communautés de Portneuf et nous adaptons notre approche en conséquence.</p>
-        <p>Notre engagement est le même qu'à Québec : une écoute authentique, des conseils clairs et un accompagnement juridique rigoureux. Avec Audex dans Portneuf, vous avez un allié proche de chez vous.</p>
+        <p>Notre engagement : une écoute authentique, des conseils clairs et un accompagnement juridique rigoureux — avec la commodité d'une consultation à distance, depuis votre domicile.</p>
       </div>
     </div>
   </section>
 
   <ServicesGrid
-    title="Nos champs de pratique à Portneuf"
-    subtitle="Tous nos services juridiques sont disponibles à notre bureau de Donnacona."
+    title="Nos champs de pratique"
+    subtitle="Tous nos services juridiques sont accessibles aux résidents de la MRC de Portneuf, par téléphone ou visioconférence."
     services={services}
     showBlurb
   />
@@ -47,12 +47,12 @@ const faq = [
   <section class="section">
     <div class="container-audex">
       <div class="contact-grid" style="grid-template-columns: 1fr;">
-        <ContactInfo showOffices="donnacona" mapHeight={300} />
+        <ContactInfo showOffices="none" remoteServiceArea="de la MRC de Portneuf" />
       </div>
     </div>
   </section>
 
   <FAQ title="Questions fréquentes — Avocat à Portneuf" items={faq} />
 
-  <CtaBlock title="Prenez rendez-vous à notre bureau de Donnacona" />
+  <CtaBlock title="Discutez avec un avocat — sans vous déplacer" />
 </BaseLayout>

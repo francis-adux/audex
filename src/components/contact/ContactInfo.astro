@@ -4,13 +4,15 @@ import { offices } from '../../data/offices';
 import { company } from '../../data/company';
 
 export interface Props {
-  showOffices?: 'all' | 'quebec' | 'donnacona';
+  showOffices?: 'all' | 'quebec' | 'donnacona' | 'none';
   mapHeight?: number;
+  remoteServiceArea?: string;
 }
 
-const { showOffices = 'all', mapHeight = 200 } = Astro.props;
+const { showOffices = 'all', mapHeight = 200, remoteServiceArea } = Astro.props;
 
 const filtered = offices.filter((o) => {
+  if (showOffices === 'none') return false;
   if (showOffices === 'quebec') return o.short === 'Québec';
   if (showOffices === 'donnacona') return o.short === 'Donnacona';
   return true;
@@ -27,6 +29,13 @@ const filtered = offices.filter((o) => {
     <h3>Heures d'ouverture</h3>
     <p set:html={company.hours.replace(/\n/g, '<br />')} />
   </div>
+
+  {remoteServiceArea && (
+    <div class="contact-location">
+      <h3>Service offert à distance</h3>
+      <p>Nous accompagnons les résidents et entreprises {remoteServiceArea} par téléphone et visioconférence — pas de déplacement nécessaire.</p>
+    </div>
+  )}
 
   {filtered.map((o) => <OfficeLocation office={o} mapHeight={mapHeight} />)}
 </div>

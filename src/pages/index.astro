@@ -1,16 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/sections/Hero.astro';
+import Stats from '../components/sections/Stats.astro';
 import Pillars from '../components/sections/Pillars.astro';
-import TrustBar from '../components/sections/TrustBar.astro';
 import ServicesGrid from '../components/sections/ServicesGrid.astro';
 import HowItWorks from '../components/sections/HowItWorks.astro';
-import TestimonialsCarousel from '../components/sections/TestimonialsCarousel.astro';
+import GoogleReviewsCTA from '../components/sections/GoogleReviewsCTA.astro';
 import Stakes from '../components/sections/Stakes.astro';
 import CtaFinal from '../components/sections/CtaFinal.astro';
 
-const title = 'Avocats à Québec et Portneuf | AUDEX Avocats — Accessibles depuis 2013';
-const description = "Cabinet d'avocats accessible à Québec et Portneuf depuis 2013. Droit familial, criminel, commercial et plus. Première consultation à tarif fixe. Appelez le 418-462-1010.";
+const title = 'Avocats à Québec | AUDEX Avocats — Accessibles depuis 2013';
+const description = "Cabinet d'avocats à Québec depuis 2013. 2 500+ dossiers traités, interventions dans 29 districts judiciaires. Première consultation à tarif fixe. Appelez le 418-462-1010.";
 ---
 
 <BaseLayout title={title} description={description}>
@@ -22,78 +22,17 @@ const description = "Cabinet d'avocats accessible à Québec et Portneuf depuis 
     imageAlt="Équipe d'avocats AUDEX en réunion avec un client"
   />
 
-  <Pillars />
+  <Stats />
 
-  <TrustBar />
+  <Pillars />
 
   <ServicesGrid />
 
   <HowItWorks />
 
-  <TestimonialsCarousel />
+  <GoogleReviewsCTA />
 
   <Stakes />
 
   <CtaFinal />
 </BaseLayout>
-
-<script is:inline>
-  (function () {
-    const track = document.getElementById('testimonial-track');
-    const prev = document.getElementById('carousel-prev');
-    const next = document.getElementById('carousel-next');
-    const dotsContainer = document.getElementById('carousel-dots');
-    if (!track || !dotsContainer) return;
-
-    const cards = Array.from(track.children);
-    if (cards.length === 0) return;
-
-    const getPerView = () => {
-      const w = window.innerWidth;
-      if (w >= 1280) return 3;
-      if (w >= 640) return 2;
-      return 1;
-    };
-
-    let perView = getPerView();
-    let index = 0;
-    const pages = () => Math.max(1, cards.length - perView + 1);
-
-    const renderDots = () => {
-      dotsContainer.innerHTML = '';
-      for (let i = 0; i < pages(); i++) {
-        const dot = document.createElement('button');
-        dot.className = 'carousel-dot' + (i === index ? ' active' : '');
-        dot.setAttribute('aria-label', `Témoignage ${i + 1}`);
-        dot.addEventListener('click', () => { index = i; update(); });
-        dotsContainer.appendChild(dot);
-      }
-    };
-
-    const update = () => {
-      if (index >= pages()) index = pages() - 1;
-      if (index < 0) index = 0;
-      const width = 100 / perView;
-      track.style.transform = `translateX(-${index * width}%)`;
-      Array.from(dotsContainer.children).forEach((d, i) => {
-        d.classList.toggle('active', i === index);
-      });
-    };
-
-    prev?.addEventListener('click', () => { index = Math.max(0, index - 1); update(); });
-    next?.addEventListener('click', () => { index = Math.min(pages() - 1, index + 1); update(); });
-
-    window.addEventListener('resize', () => {
-      const newPerView = getPerView();
-      if (newPerView !== perView) {
-        perView = newPerView;
-        index = 0;
-        renderDots();
-        update();
-      }
-    });
-
-    renderDots();
-    update();
-  })();
-</script>

@@ -34,7 +34,7 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="footer-col">
-      <h4>Nos bureaux</h4>
+      <h4>{offices.length > 1 ? 'Nos bureaux' : 'Notre bureau'}</h4>
       {offices.map((o) => (
         <div class="footer-address">
           <strong>{o.name}</strong>

@@ -1,0 +1,90 @@
+---
+export interface StatItem {
+  number: string;
+  label: string;
+}
+
+export interface Props {
+  title?: string;
+  items?: StatItem[];
+}
+
+const defaultItems: StatItem[] = [
+  { number: '2 500+', label: 'dossiers traités' },
+  { number: '29', label: 'districts judiciaires' },
+  { number: '12+', label: "années d'expérience" },
+  { number: '9', label: 'champs de pratique' },
+];
+
+const { title, items = defaultItems } = Astro.props;
+---
+
+<section class="section section-light stats-section">
+  <div class="container-audex">
+    {title && (
+      <div class="section-header">
+        <h2>{title}</h2>
+      </div>
+    )}
+    <div class="stats-grid">
+      {items.map((item) => (
+        <div class="stat-card">
+          <div class="stat-number">{item.number}</div>
+          <div class="stat-label">{item.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .stat-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.25rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--color-gold);
+  }
+  .stat-number {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-gold);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+  .stat-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+  }
+  @media (min-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .stat-card {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+</style>

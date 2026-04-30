@@ -1,0 +1,70 @@
+---
+import { company } from '../../data/company';
+---
+
+<section class="section section-light reviews-cta" id="temoignages">
+  <div class="container-audex">
+    <div class="reviews-cta-inner">
+      <p class="eyebrow">Témoignages</p>
+      <h2>Ce que disent nos clients</h2>
+      <div class="reviews-rating">
+        <span class="stars" aria-label={`5 étoiles sur 5 — ${company.reviewCount} avis Google`}>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="reviews-count">5/5 — {company.reviewCount} avis Google</span>
+      </div>
+
+      <a href={company.googleReviewsUrl} class="btn btn-gold btn-lg reviews-btn" target="_blank" rel="noopener">
+        Consulter nos avis Google
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+
+      <p class="reviews-disclaimer">Les avis sont publiés sur une plateforme tierce indépendante.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .reviews-cta-inner {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+  }
+  .reviews-cta h2 {
+    margin-bottom: 1.25rem;
+  }
+  .reviews-rating {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+  }
+  .reviews-rating .stars {
+    color: var(--color-gold);
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+  }
+  .reviews-count {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-navy);
+  }
+  .reviews-btn {
+    margin-bottom: 1rem;
+  }
+  .reviews-disclaimer {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+</style>

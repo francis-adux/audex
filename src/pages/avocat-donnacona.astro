@@ -7,39 +7,39 @@ import FAQ from '../components/sections/FAQ.astro';
 import CtaBlock from '../components/sections/CtaBlock.astro';
 import { services } from '../data/services';
 
-const title = 'Avocat à Donnacona | AUDEX Avocats — Services juridiques locaux';
-const description = "Avocat à Donnacona, Portneuf. Cabinet AUDEX Avocats : droit familial, criminel, commercial et civil. Bureau au 155, rue de l'Église. 418-462-1010.";
+const title = 'Avocat pour Donnacona | AUDEX Avocats — Service à distance';
+const description = "Avocat pour les résidents de Donnacona, Portneuf. AUDEX Avocats accompagne par téléphone et visioconférence — droit familial, civil, commercial, criminel et plus. 418-462-1010.";
 
 const faq = [
-  { question: "Pourquoi choisir AUDEX Avocats à Donnacona?", answer: "AUDEX Avocats offre un service de proximité à Donnacona depuis plusieurs années. Notre bureau au 155, rue de l'Église vous permet de consulter un avocat compétent sans avoir à vous déplacer à Québec. Notre équipe connaît la réalité de la communauté de Donnacona et de Portneuf. Première consultation à tarif fixe." },
-  { question: "Quels sont les services juridiques disponibles à Donnacona?", answer: "Notre bureau de Donnacona offre tous nos champs de pratique : droit familial, médiation familiale, droit civil, droit commercial, droit criminel et pénal, droit administratif, droit municipal, droit de l'emploi et droit de la jeunesse. Vous bénéficiez de l'expertise complète de notre équipe, directement dans votre communauté." },
-  { question: "Comment me rendre au bureau d'AUDEX Avocats à Donnacona?", answer: "Notre bureau est situé au 155, rue de l'Église, Donnacona (Québec) G3M 0A3. Le bureau est facilement accessible en voiture depuis la route 138 et l'autoroute 40. Un stationnement est disponible à proximité." },
-  { question: "Est-ce possible d'avoir un rendez-vous le soir ou la fin de semaine à Donnacona?", answer: "Oui. Bien que nos heures régulières soient du lundi au vendredi de 8 h 30 à 17 h, nous offrons des rendez-vous en soirée et les fins de semaine sur demande. Contactez-nous au 418-462-1010 pour vérifier les disponibilités." },
-  { question: "AUDEX Avocats à Donnacona accepte-t-il l'aide juridique?", answer: "Pour savoir si vous êtes admissible à l'aide juridique et si nos avocats peuvent vous recevoir sous ce programme, appelez-nous au 418-462-1010. Nous pourrons vérifier votre admissibilité et vous orienter vers les ressources appropriées." },
+  { question: "Pourquoi choisir AUDEX Avocats pour un dossier à Donnacona?", answer: "AUDEX Avocats accompagne les résidents de Donnacona et de la MRC de Portneuf depuis plusieurs années. Nos consultations se déroulent par téléphone et visioconférence, ce qui vous évite de vous déplacer à Québec tout en bénéficiant de l'expertise complète de notre équipe. Première consultation à tarif fixe." },
+  { question: "Quels sont les services juridiques disponibles pour les résidents de Donnacona?", answer: "Tous nos champs de pratique sont accessibles à distance : droit familial, médiation familiale, droit civil, droit commercial, droit criminel et pénal, droit administratif, droit municipal, droit de l'emploi et droit de la jeunesse. Vous bénéficiez de l'expertise complète de notre équipe directement depuis chez vous." },
+  { question: "Comment se déroule une consultation à distance avec AUDEX?", answer: "Vous prenez rendez-vous par téléphone ou via notre formulaire en ligne. Le jour du rendez-vous, votre avocat vous contacte par téléphone ou via Microsoft Teams selon votre préférence. La consultation se déroule comme une rencontre en personne — vous pouvez poser toutes vos questions et obtenir un plan d'action clair." },
+  { question: "Est-ce possible d'avoir un rendez-vous le soir ou la fin de semaine?", answer: "Oui. Bien que nos heures régulières soient du lundi au vendredi de 8 h 30 à 17 h, nous offrons des rendez-vous en soirée et les fins de semaine sur demande. Contactez-nous au 418-462-1010 pour vérifier les disponibilités." },
+  { question: "AUDEX Avocats accepte-t-il l'aide juridique?", answer: "Pour savoir si vous êtes admissible à l'aide juridique et si nos avocats peuvent vous recevoir sous ce programme, appelez-nous au 418-462-1010. Nous pourrons vérifier votre admissibilité et vous orienter vers les ressources appropriées." },
 ];
 ---
 
 <BaseLayout title={title} description={description} headerSolid>
   <HeroInternal
-    title="Un avocat à Donnacona — proche de vous, à votre écoute"
-    subtitle="Bureau au 155, rue de l'Église. Tous nos services juridiques, directement dans votre communauté."
+    title="Un avocat pour Donnacona — sans déplacement"
+    subtitle="Tous nos services juridiques offerts par téléphone et visioconférence aux résidents de Donnacona. Première consultation à tarif fixe."
     breadcrumb={[{ label: 'Avocat à Donnacona' }]}
   />
 
   <section class="section">
     <div class="container-audex">
       <div class="about-content">
-        <h2>Votre cabinet d'avocats à Donnacona</h2>
-        <p>AUDEX Avocats est fier d'être présent à Donnacona pour offrir un accès direct à des services juridiques de qualité. Notre bureau sur la rue de l'Église est au cœur de la communauté, à quelques minutes de chez vous.</p>
-        <p>Nous savons qu'avoir besoin d'un avocat peut être stressant. C'est pourquoi notre priorité est de rendre l'expérience aussi simple et humaine que possible. Pas besoin de se rendre à Québec — vous avez une équipe complète d'avocats à Donnacona.</p>
+        <h2>Un avocat accessible aux résidents de Donnacona</h2>
+        <p>AUDEX Avocats accompagne les citoyens et entreprises de Donnacona à travers leurs démarches juridiques — directement depuis leur domicile. Nos consultations à distance vous donnent accès à une équipe complète d'avocats sans avoir à vous déplacer à Québec.</p>
+        <p>Nous savons qu'avoir besoin d'un avocat peut être stressant. C'est pourquoi notre priorité est de rendre l'expérience aussi simple et humaine que possible. Avec nous, vous gagnez du temps, vous épargnez le déplacement, et vous restez en contrôle de votre dossier.</p>
         <p>De la première consultation au règlement de votre dossier, nous sommes là pour vous écouter, vous conseiller et vous représenter avec rigueur et bienveillance.</p>
       </div>
     </div>
   </section>
 
   <ServicesGrid
-    title="Services juridiques à Donnacona"
-    subtitle="L'ensemble de nos champs de pratique est accessible à notre bureau de Donnacona."
+    title="Services juridiques offerts aux résidents de Donnacona"
+    subtitle="L'ensemble de nos champs de pratique est accessible à distance."
     services={services}
     showBlurb
   />
@@ -47,12 +47,12 @@ const faq = [
   <section class="section">
     <div class="container-audex">
       <div class="contact-grid" style="grid-template-columns: 1fr;">
-        <ContactInfo showOffices="donnacona" mapHeight={300} />
+        <ContactInfo showOffices="none" remoteServiceArea="de Donnacona et de la MRC de Portneuf" />
       </div>
     </div>
   </section>
 
-  <FAQ title="Questions fréquentes — Avocat à Donnacona" items={faq} />
+  <FAQ title="Questions fréquentes — Avocat pour Donnacona" items={faq} />
 
-  <CtaBlock title="Prenez rendez-vous à Donnacona" />
+  <CtaBlock title="Discutez avec un avocat — sans vous déplacer" />
 </BaseLayout>

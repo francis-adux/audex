@@ -2,11 +2,12 @@
 import PillarCard from '../cards/PillarCard.astro';
 ---
 
-<section class="section" id="guide">
+<section class="section pillars-section" id="guide">
   <div class="container-audex">
     <div class="section-header">
-      <h2>Ici, on vous écoute d'abord.</h2>
-      <p>L'incertitude juridique vous paralyse? Vous n'êtes pas seul. Depuis 2013, Audex accompagne des particuliers et des dirigeants de PME à travers les moments les plus difficiles.</p>
+      <p class="eyebrow">Notre mission et nos valeurs</p>
+      <h2>Pratiquer le droit en plaçant l'écoute au cœur de chaque démarche.</h2>
+      <p>Depuis 2013, Audex guide des particuliers et des dirigeants de PME à travers les moments les plus difficiles, avec justesse et empathie. Quatre valeurs nous animent au quotidien :</p>
     </div>
 
     <div class="pillars-grid">
@@ -17,3 +18,20 @@ import PillarCard from '../cards/PillarCard.astro';
     </div>
   </div>
 </section>
+
+<style>
+  .eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+  }
+  .pillars-section .section-header h2 {
+    font-size: clamp(1.7rem, 3.8vw, 2.4rem);
+    margin-bottom: 1.25rem;
+  }
+</style>
