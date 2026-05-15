@@ -1,8 +1,12 @@
 {
   "name": "Véronik Levesque",
+  "credentials": "LL.B.",
   "role": "Technicienne juridique et étudiante en droit",
   "bio": "Véronik allie rigueur technique et passion pour le droit. Son double chapeau lui permet d'offrir un soutien précieux tant aux avocats qu'aux clients.",
   "photo": "/images/equipe/veronik-levesque.webp",
-  "order": 11,
+  "email": "v.levesque@avoc.ca",
+  "phoneExt": "109",
+  "practiceAreas": [],
+  "order": 9,
   "mascot": false
 }

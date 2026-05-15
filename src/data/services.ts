@@ -85,9 +85,9 @@ export const services: ServiceEntry[] = [
   },
   {
     slug: 'droit-emploi-travail',
-    title: "Droit de l'emploi et du travail",
-    shortTitle: "Droit de l'emploi",
-    navTitle: "Droit de l'emploi",
+    title: 'Droit du travail',
+    shortTitle: 'Droit du travail',
+    navTitle: 'Droit du travail',
     icon: 'employment',
     blurb: 'Relations de travail et congédiement',
   },

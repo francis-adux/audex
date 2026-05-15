@@ -1,8 +1,12 @@
 {
   "name": "Lori-Ann Hurtubise",
+  "credentials": "LL.B.",
   "role": "Directrice des opérations par intérim",
   "bio": "Lori-Ann est le pilier organisationnel du cabinet. Son efficacité et sa bienveillance assurent que tout fonctionne en harmonie.",
   "photo": "/images/equipe/lori-ann-hurtubise.webp",
-  "order": 10,
+  "email": "la.hurtubise@avoc.ca",
+  "phoneExt": "113",
+  "practiceAreas": [],
+  "order": 7,
   "mascot": false
 }

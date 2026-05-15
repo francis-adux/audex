@@ -5,12 +5,12 @@ order: 4
 seoTitle: "Droit commercial | AUDEX Avocats"
 seoDescription: "Avocat en droit commercial à Québec : incorporation, convention d'actionnaires, contrats et litiges d'entreprise. AUDEX Avocats."
 heroTitle: "Protégez votre entreprise avec un avocat qui comprend les PME"
-heroSubtitle: "Incorporation, contrats, convention d'actionnaires et litiges commerciaux — un avocat d'affaires accessible et efficace."
+heroSubtitle: "Incorporation, contrats, convention d'actionnaires et litiges commerciaux : un avocat d'affaires accessible et efficace."
 heroImage: "/images/services/droit-commercial.png"
 heroImageWebp: "/images/services/droit-commercial.webp"
 heroImageAlt: "Avocat en droit commercial à Québec pour PME chez AUDEX Avocats"
 introTitle: "Vous vivez un enjeu juridique dans votre entreprise?"
-offeringsSubtitle: "Chaque décision d'affaires a des implications légales — on s'assure que le droit travaille pour votre entreprise, pas contre elle."
+offeringsSubtitle: "Chaque décision d'affaires a des implications légales : on s'assure que le droit travaille pour votre entreprise, pas contre elle."
 offerings:
   - title: "Incorporation et immatriculation"
     description: "Démarrez votre entreprise sur des bases solides avec une structure juridique adaptée à vos objectifs."
@@ -30,7 +30,7 @@ offerings:
     description: "Gardez vos livres de société à jour et restez en règle sans vous casser la tête."
 highlight:
   title: "On parle votre langage d'entrepreneur"
-  description: "Pas de jargon inutile — des conseils pratiques et directs, adaptés à la réalité des PME de la région de Québec."
+  description: "Pas de jargon inutile : des conseils pratiques et directs, adaptés à la réalité des PME de la région de Québec."
 faq:
   - question: "Comment incorporer une entreprise au Québec?"
     answer: "L'incorporation consiste à créer une personne morale distincte de vous. Au Québec, vous pouvez incorporer au provincial (Registraire des entreprises) ou au fédéral (Corporations Canada). Le processus implique le choix d'un nom, la rédaction des statuts constitutifs et l'adoption des règlements internes. AUDEX Avocats s'occupe de toutes ces étapes pour vous, en s'assurant que la structure choisie correspond à vos objectifs d'affaires et protège vos intérêts."
@@ -53,4 +53,4 @@ Que vous soyez en train de démarrer votre entreprise, de négocier un contrat i
 
 Vous avez bâti votre entreprise avec passion et détermination. Vous ne voulez pas qu'un problème juridique vienne mettre en péril tout ce que vous avez construit. Mais le droit des affaires est complexe, et les erreurs peuvent coûter cher.
 
-Vous avez besoin d'un avocat qui parle votre langage, qui comprend la réalité des entrepreneurs et qui vous offre des solutions pratiques — pas du jargon juridique. C'est exactement ce qu'AUDEX vous offre.
+Vous avez besoin d'un avocat qui parle votre langage, qui comprend la réalité des entrepreneurs et qui vous offre des solutions pratiques : pas du jargon juridique. C'est exactement ce qu'AUDEX vous offre.

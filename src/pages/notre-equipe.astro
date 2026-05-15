@@ -34,6 +34,8 @@ const members = (await getCollection('team')).sort(
             role={m.data.role}
             bio={m.data.bio}
             photo={m.data.photo}
+            email={m.data.email}
+            phoneExt={m.data.phoneExt}
             mascot={m.data.mascot}
           />
         ))}

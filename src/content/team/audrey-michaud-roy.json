@@ -4,6 +4,9 @@
   "role": "Avocate",
   "bio": "Audrey est convaincue que chaque personne mérite un accompagnement juridique à la hauteur de ce qu'elle traverse. Elle pratique avec rigueur et humanité.",
   "photo": "/images/equipe/audrey-michaud-roy.webp",
-  "order": 6,
+  "email": "a.michaud-roy@avoc.ca",
+  "phoneExt": "108",
+  "practiceAreas": [],
+  "order": 10,
   "mascot": false
 }

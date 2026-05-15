@@ -27,7 +27,7 @@ Lorsque le juge de paix est convaincu par les motifs de détention, il peut ordo
 - L’obligation de se présenter, aux moments indiqués, à l’agent de la paix ou à la personne nommés ;
 - L’obligation de demeurer dans le ressort de la juridiction précisée (souvent dans le district du domicile du prévenu). Il faut renoncer à voyager jusqu’au procès lorsqu’on a une mise en liberté conditionnelle. Dans certaines circonstances, il peut même être ordonné au prévenu de remettre tous ses passeports ;
 - L’obligation d’informer l’agent de la paix ou la personne nommés de tout changement d’adresse, d’emploi ou d’occupation ;
-- S’abstenir de communiquer, directement ou indirectement, avec toute personne — plaignant, témoin ou autre — nommée (surtout dans les cas de harcèlement, de violences conjugales ou de voie de fait) ;
+- S’abstenir de communiquer, directement ou indirectement, avec toute personne nommée (plaignant, témoin ou autre), surtout dans les cas de harcèlement, de violences conjugales ou de voie de fait ;
 Le prévenu et le poursuivant ont la possibilité de demander à tout moment avant le procès une révision.
 
 L’ordonnance de mise en liberté peut aussi être modifiée avec le consentement du prévenu, du poursuivant – et la caution s’il y en a une - sans avoir à repasser devant un juge. Le consentement à la modification de l’ordonnance doit être fait par écrit.

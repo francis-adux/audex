@@ -4,6 +4,9 @@
   "role": "Avocat",
   "bio": "Yannick croit que le droit, bien expliqué, devient un outil puissant entre les mains de ses clients. Rigoureux et à l'écoute, il accompagne chaque dossier avec la même attention.",
   "photo": "/images/equipe/yannick-drapeau.webp",
-  "order": 3,
+  "email": "y.drapeau@avoc.ca",
+  "phoneExt": "117",
+  "practiceAreas": [],
+  "order": 5,
   "mascot": false
 }

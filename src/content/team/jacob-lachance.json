@@ -4,6 +4,9 @@
   "role": "Étudiant en droit",
   "bio": "Jacob combine curiosité intellectuelle et sens pratique. Il contribue activement à la recherche et à la préparation des dossiers de l'équipe.",
   "photo": "/images/equipe/jacob-lachance.webp",
+  "email": "j.lachance@avoc.ca",
+  "phoneExt": "111",
+  "practiceAreas": [],
   "order": 8,
   "mascot": false
 }

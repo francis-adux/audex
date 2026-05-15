@@ -4,6 +4,9 @@
   "role": "Président, avocat et médiateur",
   "bio": "Ce qui motive Kevin, c'est de redonner le contrôle aux gens qui se sentent dépassés par le système juridique. Fondateur d'Audex en 2013, il pratique avec une conviction : chaque client mérite d'être écouté avant tout.",
   "photo": "/images/equipe/kevin-plamondon.webp",
-  "order": 1,
+  "email": "k.plamondon@avoc.ca",
+  "phoneExt": "102",
+  "practiceAreas": [],
+  "order": 13,
   "mascot": false
 }

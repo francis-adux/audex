@@ -2,15 +2,15 @@
 title: Droit administratif
 shortTitle: Droit administratif
 order: 6
-seoTitle: "Droit administratif | AUDEX Avocats — Québec et Portneuf"
+seoTitle: "Droit administratif | AUDEX Avocats : Québec et Portneuf"
 seoDescription: "Avocat en droit administratif à Québec et Portneuf. Contestation de décisions gouvernementales, tribunaux administratifs. Consultation à tarif fixe."
 heroTitle: "Un différend avec un organisme gouvernemental? On vous accompagne."
-heroSubtitle: "Contestation de décisions, recours devant les tribunaux administratifs — on défend vos droits face à l'appareil gouvernemental."
+heroSubtitle: "Contestation de décisions, recours devant les tribunaux administratifs : on défend vos droits face à l'appareil gouvernemental."
 heroImage: "/images/services/droit-administratif.png"
 heroImageWebp: "/images/services/droit-administratif.webp"
 heroImageAlt: "Avocat en droit administratif accompagnant un client"
 introTitle: "Vous faites face à une décision gouvernementale qui vous semble injuste?"
-offeringsSubtitle: "Une décision administrative injuste peut être renversée — on bâtit la stratégie pour y arriver."
+offeringsSubtitle: "Une décision administrative injuste peut être renversée : on bâtit la stratégie pour y arriver."
 offerings:
   - title: "Analyse de vos recours"
     description: "On identifie rapidement si la décision peut être contestée et par quelle voie, pour que vous sachiez exactement où vous en êtes."
@@ -28,10 +28,10 @@ offerings:
     description: "On vous accompagne pendant le processus pour protéger vos droits et éviter les faux pas."
 highlight:
   title: "On connaît le système de l'intérieur"
-  description: "Notre équipe maîtrise le fonctionnement des organismes gouvernementaux québécois — on sait comment ils pensent, et on sait comment les faire bouger."
+  description: "Notre équipe maîtrise le fonctionnement des organismes gouvernementaux québécois : on sait comment ils pensent, et on sait comment les faire bouger."
 faq:
   - question: "Comment contester une décision d'un organisme gouvernemental au Québec?"
-    answer: "<p>Vous pouvez contester une décision administrative en déposant un recours devant le tribunal administratif compétent, comme le Tribunal administratif du Québec (TAQ). Il est important d'agir rapidement, car les délais de contestation sont souvent courts — parfois aussi peu que 30 jours. Chez AUDEX, on vous aide à comprendre vos options et à préparer un dossier solide pour faire valoir vos droits.</p>"
+    answer: "<p>Vous pouvez contester une décision administrative en déposant un recours devant le tribunal administratif compétent, comme le Tribunal administratif du Québec (TAQ). Il est important d'agir rapidement, car les délais de contestation sont souvent courts : parfois aussi peu que 30 jours. Chez AUDEX, on vous aide à comprendre vos options et à préparer un dossier solide pour faire valoir vos droits.</p>"
   - question: "Qu'est-ce qu'un tribunal administratif au Québec?"
     answer: "<p>Un tribunal administratif est un organisme indépendant qui tranche les litiges entre les citoyens et les organismes publics. Au Québec, le plus connu est le Tribunal administratif du Québec (TAQ), qui entend des recours dans des domaines variés : immigration, aide sociale, indemnisation, permis professionnels, et bien d'autres. Ces tribunaux sont généralement moins formels que les tribunaux judiciaires, mais il est fortement recommandé d'être accompagné par un avocat.</p>"
   - question: "Ai-je besoin d'un avocat pour un recours administratif?"
@@ -47,8 +47,8 @@ relatedServices:
   - droit-emploi-travail
 ---
 
-Vous avez reçu une décision d'un organisme public qui affecte directement votre vie — un refus de permis, une révocation, une décision de la CNESST, de la SAAQ ou d'un autre organisme. Vous sentez que cette décision ne reflète pas votre réalité, mais vous ne savez pas par où commencer pour la contester.
+Vous avez reçu une décision d'un organisme public qui affecte directement votre vie : un refus de permis, une révocation, une décision de la CNESST, de la SAAQ ou d'un autre organisme. Vous sentez que cette décision ne reflète pas votre réalité, mais vous ne savez pas par où commencer pour la contester.
 
-Se retrouver seul face à une machine administrative peut être intimidant. Les formulaires, les délais serrés, le langage juridique — tout semble conçu pour décourager. Vous avez l'impression de ne pas être entendu, et l'incertitude pèse lourd au quotidien.
+Se retrouver seul face à une machine administrative peut être intimidant. Les formulaires, les délais serrés, le langage juridique : tout semble conçu pour décourager. Vous avez l'impression de ne pas être entendu, et l'incertitude pèse lourd au quotidien.
 
-Vous n'avez pas à traverser ça seul. Que votre dossier concerne un refus d'indemnisation, une sanction professionnelle ou tout autre litige avec un organisme gouvernemental, vous méritez d'être accompagné par quelqu'un qui comprend le système — et qui se bat pour vous.
+Vous n'avez pas à traverser ça seul. Que votre dossier concerne un refus d'indemnisation, une sanction professionnelle ou tout autre litige avec un organisme gouvernemental, vous méritez d'être accompagné par quelqu'un qui comprend le système et qui se bat pour vous.

@@ -1,15 +1,22 @@
 ---
+import { company } from '../../data/company';
+
 export interface Props {
   name: string;
   credentials?: string;
   role: string;
   bio: string;
   photo?: string;
+  email?: string;
+  phoneExt?: string;
   mascot?: boolean;
 }
 
-const { name, credentials, role, bio, photo, mascot = false } = Astro.props;
+const { name, credentials, role, bio, photo, email, phoneExt, mascot = false } = Astro.props;
 const displayName = credentials ? `${name}, ${credentials}` : name;
+const phoneHref = phoneExt
+  ? `${company.phoneHref},${phoneExt}`
+  : company.phoneHref;
 ---
 
 <div class:list={['team-card', mascot && 'team-card-mascot']}>
@@ -19,4 +26,50 @@ const displayName = credentials ? `${name}, ${credentials}` : name;
   <h3>{displayName}</h3>
   <p class="team-title">{role}</p>
   <p class="team-bio">{bio}</p>
+
+  {(email || phoneExt) && !mascot && (
+    <div class="team-contact">
+      {phoneExt && (
+        <a href={phoneHref} class="team-contact-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Poste {phoneExt}</span>
+        </a>
+      )}
+      {email && (
+        <a href={`mailto:${email}`} class="team-contact-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>{email}</span>
+        </a>
+      )}
+    </div>
+  )}
 </div>
+
+<style>
+  .team-contact {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .team-contact-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    word-break: break-all;
+  }
+  .team-contact-line:hover {
+    color: var(--color-gold);
+  }
+  .team-contact-line svg {
+    flex-shrink: 0;
+    color: var(--color-gold);
+  }
+</style>

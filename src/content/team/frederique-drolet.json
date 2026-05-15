@@ -3,7 +3,10 @@
   "credentials": "LL.B.",
   "role": "Stagiaire en droit",
   "bio": "Frédérique apporte un regard neuf et une énergie communicative à l'équipe. Sa passion pour le droit et le contact humain se reflète dans chaque dossier qu'elle touche.",
-  "order": 7,
-  "mascot": false,
-  "photo": "/images/frederique_drolet_ll_b.png"
+  "photo": "/images/frederique_drolet_ll_b.png",
+  "email": "f.drolet@avoc.ca",
+  "phoneExt": "104",
+  "practiceAreas": [],
+  "order": 6,
+  "mascot": false
 }
