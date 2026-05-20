@@ -5,7 +5,7 @@ export interface Props {
   name: string;
   credentials?: string;
   role: string;
-  bio: string;
+  bio?: string;
   photo?: string;
   email?: string;
   phoneExt?: string;
@@ -25,7 +25,7 @@ const phoneHref = phoneExt
   </div>
   <h3>{displayName}</h3>
   <p class="team-title">{role}</p>
-  <p class="team-bio">{bio}</p>
+  {bio && <p class="team-bio">{bio}</p>}
 
   {(email || phoneExt) && !mascot && (
     <div class="team-contact">

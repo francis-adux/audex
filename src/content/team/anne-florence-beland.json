@@ -1,12 +1,11 @@
 {
-  "bio": "---",
-  "mascot": false,
-  "practiceAreas": [],
   "name": "Anne-Florence Béland",
-  "order": 2,
-  "photo": "/images/equipe/anne-florence-beland.webp",
-  "phoneExt": "101",
-  "role": "Directrice des opérations et du développement des affaires",
   "credentials": "LL.B.",
-  "email": "af.beland@avoc.ca"
+  "role": "Directrice des opérations et du développement des affaires",
+  "photo": "/images/equipe/anne-florence-beland.webp",
+  "email": "af.beland@avoc.ca",
+  "phoneExt": "101",
+  "practiceAreas": [],
+  "order": 2,
+  "mascot": false
 }
