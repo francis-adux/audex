@@ -131,6 +131,21 @@ collections:
       - { label: 'Ordre d’affichage', name: 'order', widget: 'number', default: 10, value_type: 'int' }
       - { label: 'Mascotte?', name: 'mascot', widget: 'boolean', default: false, required: false }
 
+  - name: settings
+    label: "Réglages du site"
+    files:
+      - name: analytics
+        label: "Analytics et marquage"
+        file: src/content/settings/analytics.json
+        editor:
+          preview: false
+        fields:
+          - label: "Identifiant Google Tag Manager"
+            name: "gtmId"
+            widget: "string"
+            required: false
+            hint: "Exemple : GTM-XXXXXX. Laisser vide pour désactiver le suivi."
+
   - name: pages
     label: Pages du site
     files:

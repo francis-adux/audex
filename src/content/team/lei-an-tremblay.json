@@ -1,8 +1,10 @@
 {
   "name": "Lei-An Tremblay",
   "role": "Étudiante en droit",
+  "photo": "/images/audex_avocat_lei-an.png",
+  "email": "la.tremblay@avoc.ca",
+  "phoneExt": "116",
   "practiceAreas": [],
   "order": 16,
-  "mascot": false,
-  "photo": "/images/audex_avocat_lei-an.png"
+  "mascot": false
 }

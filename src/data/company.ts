@@ -11,8 +11,8 @@ export const company = {
   googleReviewsUrl: "https://www.google.com/search?q=audex+avocats#lrd=0x4cb896e1a2e0a9a3:0x1c7e0e7e0e7e0e7e,1",
   reviewCount: 61,
   social: {
-    facebook: '',
+    facebook: 'https://www.facebook.com/profile.php?id=61579592843106',
     instagram: 'https://www.instagram.com/audexavocats',
-    linkedin: '',
+    linkedin: 'https://ca.linkedin.com/company/audexavocats',
   },
 };

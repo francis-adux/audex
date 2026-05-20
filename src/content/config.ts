@@ -87,6 +87,13 @@ const team = defineCollection({
   }),
 });
 
+const settings = defineCollection({
+  type: 'data',
+  schema: z.object({
+    gtmId: z.string().optional(),
+  }),
+});
+
 const pages = defineCollection({
   type: 'content',
   schema: z.object({
@@ -100,4 +107,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { blog, landings, services, team, pages };
+export const collections = { blog, landings, services, team, pages, settings };
