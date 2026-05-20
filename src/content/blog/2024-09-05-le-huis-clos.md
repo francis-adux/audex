@@ -9,7 +9,7 @@ draft: false
 
 En règle générale, les audiences devant les tribunaux sont publiques. Cela signifie que, dans la plupart des cas, les citoyens peuvent assister librement aux procès qui se déroulent dans les palais de justice à travers le Québec.
 
-Cependant, il existe des exceptions à ce principe. Face à ces exceptions, l’accès du public est alors interdit. On dit alors que ces procès se déroulent à huis clos. Lorsqu’un huis clos est ordonné, le juge peut exiger que tous les membres du public présent quittent la salle pour la durée de l’audience ou pour une durée déterminée.
+Cependant, il existe des exceptions à ce principe. Face à ces exceptions, l’accès du public est alors interdit. On dit alors que ces procès se déroulent à huis clos. Lorsqu’un huis clos est ordonné, le juge peut exiger que tous les membres du public présent quittent la salle pour la durée de l’audience ou pour une durée déterminée. Pour comprendre vos droits en [droit familial](/services/droit-familial), en [droit de la jeunesse](/services/droit-jeunesse) ou en [droit criminel](/services/droit-criminel-penal), notre équipe peut vous accompagner.
 
 Au moment d’ordonner un huis clos, le juge peut prendre en considération les éléments suivant :
 

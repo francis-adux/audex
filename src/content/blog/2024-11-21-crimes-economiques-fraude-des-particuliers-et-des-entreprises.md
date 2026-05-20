@@ -7,7 +7,7 @@ tags: ["Droit criminel","Crimes économiques"]
 draft: false
 ---
 
-Le Code criminel définit la fraude comme étant une supercherie, un mensonge ou autre moyen dolosif, constituant ou non un faux semblant qui frustre le public ou toute personne, déterminée ou non, de quelque bien, service, argent ou valeur. Les types de fraude sont variés : fraude amoureuse, fraude hypothécaire, fraude d’assurance, fraude envers les ainés, fraude liée à l’identité, de sorte qu’il est possible que l’on en ait déjà été victime ou témoin.
+Le Code criminel définit la fraude comme étant une supercherie, un mensonge ou autre moyen dolosif, constituant ou non un faux semblant qui frustre le public ou toute personne, déterminée ou non, de quelque bien, service, argent ou valeur. Les types de fraude sont variés : fraude amoureuse, fraude hypothécaire, fraude d’assurance, fraude envers les ainés, fraude liée à l’identité, de sorte qu’il est possible que l’on en ait déjà été victime ou témoin. Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 Plusieurs circonstances aggravantes sont prises en compte pour l’infraction de fraude, notamment la valeur de la fraude. Des peines plus élevées sont à prévoir pour une fraude qui a une valeur de plus d’un million de dollars. L’ampleur, la complexité et la durée de la fraude sont aussi prises en considération, mais aussi :
 

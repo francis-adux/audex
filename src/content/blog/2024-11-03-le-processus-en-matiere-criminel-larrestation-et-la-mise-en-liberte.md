@@ -8,7 +8,7 @@ draft: false
 ---
 
 - L’arrestation sans mandat par une personne autre d’un agent de la paix
-Le code criminel indique que toute personne peut arrêter sans mandat :
+Le code criminel indique que toute personne peut arrêter sans mandat : Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 - Soit un individu qu’elle trouve en train de commettre un acte criminel* ;
 - Ou un individu qui, selon des motifs raisonnables, a commis une infraction criminelle, que cette personne est entrain de fuir les personnes légalement autorisées à l’arrêter et est immédiatement poursuivi par ces personnes.

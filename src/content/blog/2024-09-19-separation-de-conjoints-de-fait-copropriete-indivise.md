@@ -7,7 +7,7 @@ tags: ["Droit familial"]
 draft: false
 ---
 
-L'indivision est une situation courante mais souvent mal comprise par les particuliers. Un exemple typique est celui de conjoints de fait qui achètent une maison ensemble. Les deux figurent alors sur l'acte de vente notarié en tant que propriétaires. En l'absence de précision sur l'acte de vente concernant la répartition des parts, il est présumé que chaque indivisaire détient une part égale.
+L'indivision est une situation courante mais souvent mal comprise par les particuliers. Un exemple typique est celui de conjoints de fait qui achètent une maison ensemble. Les deux figurent alors sur l'acte de vente notarié en tant que propriétaires. En l'absence de précision sur l'acte de vente concernant la répartition des parts, il est présumé que chaque indivisaire détient une part égale. Pour des conseils adaptés à votre situation, consultez notre page [droit familial](/services/droit-familial).
 
 En cas de séparation, que se passe-t-il ?
 

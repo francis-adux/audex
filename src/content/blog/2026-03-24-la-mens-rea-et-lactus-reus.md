@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-L’actus reus et la mens rea
+L’actus reus et la mens rea Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 Il y a deux éléments essentiels à une infraction criminelle : l' actus reus et la mens rea . Le procureur de la poursuite doit prouver ces deux éléments hors de tout doute raisonnable pour établir la culpabilité de l'accusé.
 

@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-Une infraction est constituée de deux éléments, l’élément matériel (Actus reus) et l’élément intentionnel (Mens rea). Lorsque le caractère volontaire et l’état d’esprit fautif de l’accusé ne sont pas prouvés hors de tout doute raisonnable, le procureur de la couronne n’est pas en mesure de remplir son fardeau de la preuve et le juge doit acquitter l’accusé.
+Une infraction est constituée de deux éléments, l’élément matériel (Actus reus) et l’élément intentionnel (Mens rea). Lorsque le caractère volontaire et l’état d’esprit fautif de l’accusé ne sont pas prouvés hors de tout doute raisonnable, le procureur de la couronne n’est pas en mesure de remplir son fardeau de la preuve et le juge doit acquitter l’accusé. Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 L’intoxication peut être un moyen de défense en fonction du type d’infraction commise et du degré d’intoxication. La nature ou la légalité de la substance consommée ne sont pas des critères déterminants pour qualifier l’intoxication de l’accusé.
 

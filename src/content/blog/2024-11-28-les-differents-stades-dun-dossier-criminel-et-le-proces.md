@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-Vous avez reçu une sommation par la poste ? Les policiers vous ont remis en liberté avec ou sans condition suivant votre arrestation ? Le présent article a pour objectif de vous démystifier les étapes à venir.
+Vous avez reçu une sommation par la poste ? Les policiers vous ont remis en liberté avec ou sans condition suivant votre arrestation ? Le présent article a pour objectif de vous démystifier les étapes à venir. Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 ## La comparution
 

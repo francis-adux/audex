@@ -7,7 +7,7 @@ tags: ["Droit civil","Succession","Droit familial"]
 draft: false
 ---
 
-Si une personne décède sans testament, c’est le Code civil du Québec qui dictera à qui sera dévolue la succession du défunt. On fait alors référence au principe de la dévolution légale.
+Si une personne décède sans testament, c’est le Code civil du Québec qui dictera à qui sera dévolue la succession du défunt. On fait alors référence au principe de la dévolution légale. Pour planifier votre succession et rédiger un testament adapté à votre situation, notre équipe en [droit civil général](/services/droit-civil-general) peut vous accompagner.
 
 ## Qui peut faire un testament ?
 
@@ -47,7 +47,7 @@ Les bénéficiaires récurrents que l’on retrouve dans une dévolution légale
 
 ## Pourquoi est-il important d’avoir un testament ?
 
-- Pour léguer des biens et protéger son conjoint de fait. En effet, la loi n’inclut pas le conjoint de fait à titre de conjoint survivant pour une succession;
+- Pour léguer des biens et protéger son conjoint de fait. En effet, la loi n’inclut pas le conjoint de fait à titre de conjoint survivant pour une succession. Si vous êtes conjoint de fait, notre équipe en [droit familial](/services/droit-familial) peut vous aider à protéger vos droits;
 - Pour choisir le liquidateur. Cependant, lorsque les seuls héritiers sont le descendant mineur et son représentant (le conjoint survivant), le liquidateur doit être une personne autre que le représentant;
 - Afin de choisir la personne qui s’occupera de ses enfants en bas âge.
 

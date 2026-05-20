@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HeroInternal from '../../components/sections/HeroInternal.astro';
-import CtaBlock from '../../components/sections/CtaBlock.astro';
+import ArticleRelatedServices from '../../components/sections/ArticleRelatedServices.astro';
 import { getCollection } from 'astro:content';
+import { tagToServiceUrl } from '../../data/tag-to-service';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -54,16 +55,21 @@ const formatDate = (d: Date) =>
 
         {post.data.tags && post.data.tags.length > 0 && (
           <div class="blog-post-tags">
-            {post.data.tags.map((tag) => (
-              <span class="blog-tag">{tag}</span>
-            ))}
+            {post.data.tags.map((tag) => {
+              const url = tagToServiceUrl(tag);
+              return url ? (
+                <a href={url} class="blog-tag blog-tag-link">{tag}</a>
+              ) : (
+                <span class="blog-tag">{tag}</span>
+              );
+            })}
           </div>
         )}
       </div>
     </div>
   </article>
 
-  <CtaBlock title="Une question sur votre situation?" />
+  <ArticleRelatedServices tags={post.data.tags} />
 </BaseLayout>
 
 <style>
@@ -165,6 +171,14 @@ const formatDate = (d: Date) =>
     padding: 0.4rem 1rem;
     border-radius: 50px;
     font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .blog-tag {
     font-weight: 600;
+  }
+  .blog-tag-link:hover {
+    background: var(--color-gold);
+    color: var(--color-white);
   }
 </style>

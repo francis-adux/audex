@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-Face à une accusation, la légitime défense est un moyen de défense recevable à certaines conditions que nous développerons. Définissons d’abord ce qu’est la légitime défense. C’est l’article 34 du Code Criminel qui fait référence à ce concept. Ce moyen de défense peut être invoqué si l’accusé a des motifs raisonnables de croire que la force est ou sera employé contre lui ou un tiers. La légitime défense peut aussi être invoquée lorsque la jouissance paisible d’un bien nous appartenant ou appartenant à un tiers est menacée et qu’il risque d’être détruit ou endommagé.
+Face à une accusation, la légitime défense est un moyen de défense recevable à certaines conditions que nous développerons. Si vous envisagez d’invoquer ce moyen de défense, l’équipe d’AUDEX en [droit criminel et pénal](/services/droit-criminel-penal) peut vous accompagner. Définissons d’abord ce qu’est la légitime défense. C’est l’article 34 du Code Criminel qui fait référence à ce concept. Ce moyen de défense peut être invoqué si l’accusé a des motifs raisonnables de croire que la force est ou sera employé contre lui ou un tiers. La légitime défense peut aussi être invoquée lorsque la jouissance paisible d’un bien nous appartenant ou appartenant à un tiers est menacée et qu’il risque d’être détruit ou endommagé.
 
 La défense de légitime défense peut être invoquée et l’usage de la force sera justifié lorsque ces trois conditions sont rencontrées :
 

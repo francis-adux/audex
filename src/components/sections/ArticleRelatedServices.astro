@@ -1,0 +1,81 @@
+---
+import { services } from '../../data/services';
+import { tagsToServiceSlugs } from '../../data/tag-to-service';
+import ServiceCard from '../cards/ServiceCard.astro';
+
+export interface Props {
+  tags?: string[];
+}
+
+const { tags = [] } = Astro.props;
+const slugs = tagsToServiceSlugs(tags, 3);
+const relatedServices = slugs
+  .map((slug) => services.find((s) => s.slug === slug))
+  .filter((s): s is (typeof services)[number] => Boolean(s));
+
+// If no tag matches any service, fall back to the criminal page + a CTA to the homepage
+const showFallback = relatedServices.length === 0;
+---
+
+<section class="article-related section section-light">
+  <div class="container-audex">
+    <div class="article-related-header">
+      <p class="eyebrow">Pour aller plus loin</p>
+      <h2>Besoin d'un accompagnement juridique?</h2>
+      <p>Cet article est à titre informatif. Pour des conseils adaptés à votre situation, discutez avec un avocat de notre équipe.</p>
+    </div>
+
+    {!showFallback && (
+      <div class="article-related-grid">
+        {relatedServices.map((s) => <ServiceCard service={s} showBlurb />)}
+      </div>
+    )}
+
+    {showFallback && (
+      <div class="article-related-grid">
+        <ServiceCard service={services.find((s) => s.slug === 'droit-criminel-penal')!} showBlurb />
+      </div>
+    )}
+
+    <div class="article-related-cta">
+      <a href="/nous-joindre" class="btn btn-gold btn-lg">Planifier une consultation</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .article-related-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 2.5rem;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+  }
+  .article-related-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .article-related-cta {
+    text-align: center;
+  }
+  @media (min-width: 640px) {
+    .article-related-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .article-related-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

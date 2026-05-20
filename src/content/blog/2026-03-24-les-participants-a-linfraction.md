@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-Lorsqu’un crime est commis, on a souvent tendance à penser à son auteur comme étant le principal et unique accusé de l’infraction. Cependant, même si l’auteur de l’infraction est un élément obligatoire, d’autres individus peuvent être accusés pour avoir participé d’une façon ou d’une autre à la commission du crime.
+Lorsqu’un crime est commis, on a souvent tendance à penser à son auteur comme étant le principal et unique accusé de l’infraction. Cependant, même si l’auteur de l’infraction est un élément obligatoire, d’autres individus peuvent être accusés pour avoir participé d’une façon ou d’une autre à la commission du crime. Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 Il y a en effet plusieurs façons d’engager sa responsabilité criminelle. Le Code criminel prévoit six types de participants possibles à une infraction, soit :
 

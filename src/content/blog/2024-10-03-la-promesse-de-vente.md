@@ -7,7 +7,7 @@ tags: ["Droit civil","Immobilier"]
 draft: false
 ---
 
-Vente immobilière - offre conditionnelle et offre inconditionnelle – promesse d’achat- régime juridique :
+Vente immobilière - offre conditionnelle et offre inconditionnelle – promesse d’achat- régime juridique : Pour des conseils adaptés à votre situation, consultez notre page [droit civil général](/services/droit-civil-general).
 
 Le Code civil du Québec définit la vente comme « un contrat par lequel une personne, le vendeur, transfère la propriété d’un bien à une autre personne, l’acheteur, moyennant un prix en argent que cette dernière s’oblige à payer ».
 

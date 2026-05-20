@@ -20,7 +20,7 @@ L’ordre public se divise en 2 ordres :
 - L’ordre public politique et moral
 Ce type d’ordre public concerne l’administration de la justice, l’organisation de l’État, les lois administratives et fiscales, les lois d’organisation des corporations professionnelles, les lois pénales, les lois du travail et les chartes des droits et libertés.
 
-Tout contrat dont l’objet est contraire à ces lois est frappé de nullité absolue. Par exemple, un contrat de mariage doit être notarié sous peine de nullité absolue. Donc, il est impossible pour les parties de déroger à ces règles de droit.
+Tout contrat dont l’objet est contraire à ces lois est frappé de nullité absolue. Par exemple, un contrat de mariage doit être notarié sous peine de nullité absolue. Donc, il est impossible pour les parties de déroger à ces règles de droit. Pour faire valider la conformité d’un contrat, consultez notre équipe en [droit civil général](/services/droit-civil-general).
 
 - L’ordre public économique
 Ce type d’ordre public peut prendre deux (2) formes soit de direction ou de protection.

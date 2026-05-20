@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-L’article 11e) de la *Charte canadienne des droits et libertés* consacre le principe selon lequel un prévenu a le droit de ne pas être privé sans cause juste d’une mise en liberté assortie d’un cautionnement. Ce principe est étroitement lié à celui de la présomption d’innocence. Ainsi, il faut des motifs sérieux pour que le juge de paix ordonne la détention du prévenu avant le procès. Celui-ci peut ordonner une détention, une mise en liberté sans condition, une mise en liberté avec des conditions, la demande d’une garantie ou la nomination d’une caution.
+L’article 11e) de la *Charte canadienne des droits et libertés* consacre le principe selon lequel un prévenu a le droit de ne pas être privé sans cause juste d’une mise en liberté assortie d’un cautionnement. Ce principe est étroitement lié à celui de la présomption d’innocence. Ainsi, il faut des motifs sérieux pour que le juge de paix ordonne la détention du prévenu avant le procès. Celui-ci peut ordonner une détention, une mise en liberté sans condition, une mise en liberté avec des conditions, la demande d’une garantie ou la nomination d’une caution. Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](/services/droit-criminel-penal).
 
 Une enquête sur remise en liberté provisoire est alors tenue devant le juge de paix. Cette audience n’est pas considérée comme un procès et la procédure se veut expéditive.
 

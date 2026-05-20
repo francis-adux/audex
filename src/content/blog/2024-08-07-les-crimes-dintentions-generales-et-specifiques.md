@@ -7,7 +7,7 @@ tags: ["Droit criminel"]
 draft: false
 ---
 
-Les crimes d’intention générale sont ceux qui ne demandent que l’accomplissement de l’acte prohibé. Celui-ci est fait sans but particulier. Lors de la commission de l’infraction, l’accusé à la connaissance de l’actus reus uniquement. Par exemple, pour une accusation de voie de fait, un crime d’intention générale, lorsque l’accusé frappe la victime, il est conscient de le faire sans son consentement.
+Les crimes d’intention générale sont ceux qui ne demandent que l’accomplissement de l’acte prohibé. Celui-ci est fait sans but particulier. Lors de la commission de l’infraction, l’accusé à la connaissance de l’actus reus uniquement. Par exemple, pour une accusation de voie de fait, un crime d’intention générale, lorsque l’accusé frappe la victime, il est conscient de le faire sans son consentement. Si vous faites face à une accusation criminelle, notre équipe en [droit criminel et pénal](/services/droit-criminel-penal) peut vous accompagner dans votre défense.
 
 Les crimes d’intention spécifique sont ceux qui demandent l’accomplissement de l’acte prohibé dans un but particulier. Le texte de loi sera formulé de sorte qu’on retrouve les termes « dans le but de » ou « dans l’intention de ». Au contraire, si ces termes ne se retrouvent pas dans le texte de loi, il s’agit d’un crime d’intention générale. Le fardeau de la poursuite est donc plus lourd puisque la mens rea et l’actus reus doivent être prouvés hors de tout doute raisonnable (voir notre texte sur l’actus reus et la mens rea).
 

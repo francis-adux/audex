@@ -7,7 +7,7 @@ tags: ["Droit familial","Médiation"]
 draft: false
 ---
 
-Le Code de procédure civile prévoit de façon générale des dispositions qui orientent les parties vers la considération des modes privés de prévention et de règlement de leur différend comme la médiation.
+Le Code de procédure civile prévoit de façon générale des dispositions qui orientent les parties vers la considération des modes privés de prévention et de règlement de leur différend comme la médiation. Pour des conseils adaptés à votre situation, consultez notre page [droit familial](/services/droit-familial).
 
 La médiation est un processus volontaire qui nécessite que les parties fasse preuve de bonne foi, de transparence l’une envers l’autre et de coopération active dans la recherche d’une solution. Ainsi, le tribunal n’oblige pas les parties à aller en médiation. Il est à noter que seule la séance d’information sur la parentalité est obligatoire avant l’instruction d’une affaire. Les parties peuvent toutefois être exempté de cette obligation en déposant au greffe une attestation à l’effet que la partie a déjà participé à une séance dans le cadre d’un dossier antérieur ou en invoquant être victime de violence conjugale et confirmer avoir eu recours à un service d’aide aux victimes. Malgré ces deux exceptions, le juge peut ordonner aux parties de participer à la séance d’information.
 

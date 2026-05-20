@@ -7,7 +7,7 @@ tags: ["Droit familial"]
 draft: false
 ---
 
-Longtemps désignée comme « le divorce des catholiques », la séparation de corps, contrairement au divorce, ne dissout pas le mariage. Son principal effet est de libérer les parties de l'obligation de faire vie commune. En effet, l'un des effets du mariage est que les époux doivent vivre ensemble. Cependant, lorsque cette obligation n'est pas respectée par l'un ou l'autre des époux, ou par les deux d'un commun accord, ils peuvent demander un jugement de séparation de corps. Lors de ce jugement, les autres effets du mariage, tels que les obligations alimentaires, demeurent.
+Longtemps désignée comme « le divorce des catholiques », la séparation de corps, contrairement au divorce, ne dissout pas le mariage. Son principal effet est de libérer les parties de l'obligation de faire vie commune. En effet, l'un des effets du mariage est que les époux doivent vivre ensemble. Cependant, lorsque cette obligation n'est pas respectée par l'un ou l'autre des époux, ou par les deux d'un commun accord, ils peuvent demander un jugement de séparation de corps. Lors de ce jugement, les autres effets du mariage, tels que les obligations alimentaires, demeurent. Pour des conseils adaptés à votre situation, consultez notre page [droit familial](/services/droit-familial).
 
 Le Code civil énumère certaines situations de manière non-exhaustive :
 

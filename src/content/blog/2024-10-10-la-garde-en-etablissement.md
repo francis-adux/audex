@@ -7,7 +7,7 @@ tags: ["Droit civil","Santé"]
 draft: false
 ---
 
-La garde en établissement ou l’hospitalisation forcée, mesure de dernier recours, vise à maintenir une personne dans un établissement de santé sans son consentement lorsqu'elle représente un danger pour elle-même ou pour autrui en raison de son état mental.
+La garde en établissement ou l’hospitalisation forcée, mesure de dernier recours, vise à maintenir une personne dans un établissement de santé sans son consentement lorsqu'elle représente un danger pour elle-même ou pour autrui en raison de son état mental. Pour des conseils adaptés à votre situation, consultez notre page [droit civil général](/services/droit-civil-general).
 
 Il existe trois types de garde en établissement :
 
