@@ -1,11 +1,12 @@
 {
-  "name": "Lori-Ann Hurtubise",
-  "credentials": "LL.B.",
-  "role": "Directrice des opérations par intérim",
-  "photo": "/images/equipe/lori-ann-hurtubise.webp",
-  "email": "la.hurtubise@avoc.ca",
-  "phoneExt": "113",
+  "bio": " ",
+  "mascot": false,
   "practiceAreas": [],
+  "name": "Lori-Ann Hurtubise",
   "order": 7,
-  "mascot": false
+  "photo": "/images/equipe/lori-ann-hurtubise.webp",
+  "phoneExt": "113",
+  "role": "Directrice des opérations",
+  "credentials": "LL.B.",
+  "email": "la.hurtubise@avoc.ca"
 }
