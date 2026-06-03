@@ -10,6 +10,227 @@
   to = "/admin/index.html"
   status = 200
 
+# ─── Pages principales ────────────────────────────────────────────────────────
+[[redirects]]
+  from = "/nos-services/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/nos-services"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/nous-joindre/merci/"
+  to   = "/merci/"
+  status = 301
+
+[[redirects]]
+  from = "/politique-de-confidentialite/"
+  to   = "/politique-confidentialite/"
+  status = 301
+
+[[redirects]]
+  from = "/politique-de-confidentialite"
+  to   = "/politique-confidentialite/"
+  status = 301
+
+# ─── Ressources juridiques (n'existent plus) ──────────────────────────────────
+[[redirects]]
+  from = "/publications/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/formulaires/"
+  to   = "/nous-joindre/"
+  status = 301
+
+[[redirects]]
+  from = "/jurisprudence/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/information-juridique/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/lois-et-reglements/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/associations/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/medias/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/carrieres/"
+  to   = "/"
+  status = 301
+
+# ─── Champs de pratique → Services ────────────────────────────────────────────
+[[redirects]]
+  from = "/champs-de-pratique/droit-familial/"
+  to   = "/services/droit-familial/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/mediation-familiale/"
+  to   = "/services/mediation-familiale/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-civil-general/"
+  to   = "/services/droit-civil-general/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-commercial-et-de-lentreprise/"
+  to   = "/services/droit-commercial/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-criminel-et-penal/"
+  to   = "/services/droit-criminel-penal/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-administratif-et-social/"
+  to   = "/services/droit-administratif/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-municipal/"
+  to   = "/services/droit-municipal/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-de-lemploi-et-du-travail/"
+  to   = "/services/droit-emploi-travail/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique/droit-de-la-jeunesse/"
+  to   = "/services/droit-jeunesse/"
+  status = 301
+
+# ─── Profils équipe individuels — 302 TEMPORAIRE (pages recréées en phase 2) ──
+[[redirects]]
+  from = "/notre-equipe/anne-florence-beland/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/audrey-auclair/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/audrey-castonguay/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/audrey-michaud-roy/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/jacob-lachance/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/kevin-plamondon/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/lori-ann-hurtubise/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/maryssa-carrier-floyd/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/mireille-moreau/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/veronik-levesque/"
+  to   = "/notre-equipe/"
+  status = 302
+
+[[redirects]]
+  from = "/notre-equipe/yannick-drapeau/"
+  to   = "/notre-equipe/"
+  status = 302
+
+# ─── Articles et publications ─────────────────────────────────────────────────
+[[redirects]]
+  from = "/vices-caches/"
+  to   = "/services/droit-civil-general/"
+  status = 301
+
+[[redirects]]
+  from = "/lenrichissement-injustifie-recours-pour-conjoints-de-fait-leses/"
+  to   = "/services/droit-familial/"
+  status = 301
+
+[[redirects]]
+  from = "/2024/08/22/lactus-reus-et-la-mens-rea/"
+  to   = "/blog/2026-03-24-la-mens-rea-et-lactus-reus/"
+  status = 301
+
+[[redirects]]
+  from = "/2024/08/23/les-participants-a-linfraction/"
+  to   = "/blog/2026-03-24-les-participants-a-linfraction/"
+  status = 301
+
+[[redirects]]
+  from = "/2024/08/28/lordre-public/"
+  to   = "/blog/2024-03-27-lordre-public/"
+  status = 301
+
+# ─── Catégories et tags ───────────────────────────────────────────────────────
+[[redirects]]
+  from = "/category/criminel/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/category/non-classe/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/category/notre-equipe/"
+  to   = "/notre-equipe/"
+  status = 301
+
+[[redirects]]
+  from = "/category/offre-demploi/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/permis-de-conduire/"
+  to   = "/services/droit-criminel-penal/"
+  status = 301
+
 [[headers]]
   for = "/admin/*"
   [headers.values]
