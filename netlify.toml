@@ -10,6 +10,12 @@
   to = "/admin/index.html"
   status = 200
 
+# ─── Sitemap (compatibilité URL courante) ─────────────────────────────────────
+[[redirects]]
+  from = "/sitemap.xml"
+  to   = "/sitemap-index.xml"
+  status = 301
+
 # ─── Pages principales ────────────────────────────────────────────────────────
 [[redirects]]
   from = "/nos-services/"
@@ -74,6 +80,28 @@
 
 [[redirects]]
   from = "/carrieres/"
+  to   = "/"
+  status = 301
+
+# ─── Blogue (ancien site PHP) → Blog ─────────────────────────────────────────
+[[redirects]]
+  from = "/blogue/"
+  to   = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blogue/*"
+  to   = "/blog/"
+  status = 301
+
+# ─── Champs de pratique → index ───────────────────────────────────────────────
+[[redirects]]
+  from = "/champs-de-pratique/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/champs-de-pratique"
   to   = "/"
   status = 301
 
