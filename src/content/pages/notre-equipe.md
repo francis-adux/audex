@@ -5,7 +5,7 @@ description: Rencontrez l'équipe d'AUDEX Avocats. Des avocats humains,
 heroTitle: Des avocats qui vous ressemblent
 heroSubtitle: "Chez Audex, chaque membre de l'équipe partage la même conviction
   : vous méritez un avocat qui prend le temps."
-heroImage: /images/chatgpt-image-29-mai-2026-16_03_54.png
-heroImageWebp: /images/chatgpt-image-29-mai-2026-16_03_54.png
+heroImage: /images/screenshot-2026-06-17-at-1.39.30 pm.png
+heroImageWebp: /images/screenshot-2026-06-17-at-1.39.30 pm.png
 heroImageAlt: L'équipe AUDEX Avocats
 ---
