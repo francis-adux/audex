@@ -5,7 +5,7 @@ description: "Lorsqu’un crime est commis, on a souvent tendance à penser à s
   même si l’auteur de l’infraction est un élément obligatoire, d’autres
   individus peuvent être accusés pour avoir participé d’une façon ou d’une autre
   à la commission du crime. "
-publishDate: 2026-03-24
+publishDate: 2026-07-08
 author: Équipe AUDEX
 tags:
   - Droit criminel
