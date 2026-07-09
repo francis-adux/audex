@@ -23,8 +23,6 @@ Pour des conseils adaptés à votre situation, consultez notre page [droit crimi
 * Le conseiller
 * Le complice après le fait
 
-Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](https://avoc.ca/services/droit-criminel-penal).
-
 **L'auteur de l'infraction.** L'auteur est la personne qui commet l'infraction.
 
 **L'aide ou le complice.** L'aide ou le complice viennent en aide à l'auteur de l'infraction. La contribution de l'aide ou du complice n'a pas besoin d'atteindre un certain niveau ; elle peut être petite ou grande. Les actions de l'aide et du complice peuvent être positives ou négatives. En effet, autant un geste positif comme conduire le véhicule de fuite qu'un geste négatif comme laisser la porte de sortie déverrouillée sont vus comme une participation à l'infraction criminelle.
