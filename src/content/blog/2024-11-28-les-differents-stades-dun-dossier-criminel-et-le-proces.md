@@ -13,26 +13,12 @@ Vous avez reçu une sommation par la poste ? Les policiers vous ont remis en lib
 
 Pour des conseils adaptés à votre situation, consultez notre page [droit criminel et pénal](https://avoc.ca/services/droit-criminel-penal).
 
-
-
 ### La comparution
 
 **Quelles sont les dates importantes sur une sommation ?** Que vous receviez une sommation, une citation ou une promesse de comparaître, vous trouverez deux dates importantes sur votre document :
 
-* La date de la 
-
-  **prise de vos empreintes**
-
-   pour l'application de la 
-
-  *Loi sur l'identification des criminels*
-
-   ;
-* La date de votre 
-
-  **comparution devant le tribunal**
-
-  .
+* La date de la **prise de vos empreintes** pour l'application de la *Loi sur l'identification des criminels* 
+* La date de votre **comparution devant le tribunal**
 
 Un manquement à l'une de ces deux dates peut entraîner une accusation supplémentaire de bris de conditions.
 
@@ -42,8 +28,6 @@ Lors du premier passage devant la cour, les modalités peuvent varier selon le m
 
 Le dossier est ensuite reporté à une date ultérieure afin que la défense puisse prendre connaissance de la preuve.
 
-
-
 ### L'orientation du dossier
 
 Plusieurs audiences peuvent avoir lieu avant de fixer le dossier pour procès. En effet, après la réception de la preuve, il sera possible de prendre connaissance de celle-ci avec votre avocat en droit criminel et d'établir si des éléments de contestation peuvent être présentés au tribunal.
@@ -51,13 +35,9 @@ Plusieurs audiences peuvent avoir lieu avant de fixer le dossier pour procès. E
 Après cette évaluation, il y a généralement deux options possibles :
 
 * **Enregistrer un plaidoyer de culpabilité**
-
-   ;
-* **Présenter les requêtes pertinentes ou fixer le dossier pour procès.**
+* **Présenter les requêtes pertinentes ou fixer le dossier pour procès**
 
 À noter que l'absence d'un prévenu à l'une de ses dates de cour, peu importe à quel stade il se trouve, peut entraîner l'émission d'un mandat d'arrestation contre lui.
-
-
 
 ### L'enregistrement d'un plaidoyer de culpabilité
 
@@ -75,14 +55,10 @@ Si les procureurs sont dans l'impossibilité de s'entendre quant à la peine, le
 
 Des requêtes préliminaires peuvent être entendues avant l'audience. Il est possible de faire des requêtes quant à :
 
-* l'admissibilité de certaines preuves ;
-* la validité des mandats de perquisition ;
-* le respect des droits constitutionnels du prévenu, en vertu de la 
-
-  *Charte canadienne des droits et libertés*
-
-   ;
-* l'admissibilité de la déclaration du prévenu.
+* l'admissibilité de certaines preuves 
+* la validité des mandats de perquisition 
+* le respect des droits constitutionnels du prévenu, en vertu de la *Charte canadienne des droits et libertés* 
+* l'admissibilité de la déclaration du prévenu
 
 **Qui a le fardeau de la preuve lors d'un procès criminel ?** Au moment du procès, il est important de savoir que le fardeau revient à la couronne de démontrer **hors de tout doute raisonnable** que le prévenu a commis les éléments essentiels de l'infraction. Le prévenu n'a d'ailleurs pas l'obligation de témoigner dans le cadre de son procès.
 
