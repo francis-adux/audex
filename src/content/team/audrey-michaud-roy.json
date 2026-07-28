@@ -5,7 +5,7 @@
   "photo": "/images/equipe/audrey-michaud-roy.webp",
   "email": "a.michaud-roy@avoc.ca",
   "phoneExt": "108",
-  "practiceAreas": [],
+  "practiceAreas": ["droit-familial", "droit-jeunesse"],
   "order": 10,
   "mascot": false
 }

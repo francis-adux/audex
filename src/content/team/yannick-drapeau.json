@@ -5,7 +5,7 @@
   "photo": "/images/equipe/yannick-drapeau.webp",
   "email": "y.drapeau@avoc.ca",
   "phoneExt": "117",
-  "practiceAreas": [],
+  "practiceAreas": ["droit-familial", "droit-emploi-travail", "droit-civil-general"],
   "order": 5,
   "mascot": false
 }

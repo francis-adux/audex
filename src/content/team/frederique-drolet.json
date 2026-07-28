@@ -5,7 +5,7 @@
   "photo": "/images/frederique_drolet_ll_b.png",
   "email": "f.drolet@avoc.ca",
   "phoneExt": "104",
-  "practiceAreas": [],
+  "practiceAreas": ["droit-criminel-penal", "droit-jeunesse"],
   "order": 6,
   "mascot": false
 }

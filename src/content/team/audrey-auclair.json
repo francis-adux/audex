@@ -5,7 +5,7 @@
   "photo": "/images/equipe/audrey-auclair.webp",
   "email": "a.auclair@avoc.ca",
   "phoneExt": "106",
-  "practiceAreas": [],
+  "practiceAreas": ["droit-familial", "droit-civil-general"],
   "order": 1,
   "mascot": false
 }

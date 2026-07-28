@@ -1,0 +1,244 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaBlock from '../../components/sections/CtaBlock.astro';
+import { company } from '../../data/company';
+
+export async function getStaticPaths() {
+  const members = await getCollection('team');
+  return members
+    .filter((m) => !m.data.mascot)
+    .map((m) => ({
+      params: { slug: m.id },
+      props: { member: m },
+    }));
+}
+
+const { member } = Astro.props;
+const d = member.data;
+const displayName = d.credentials ? `${d.name}, ${d.credentials}` : d.name;
+const phoneHref = d.phoneExt ? `${company.phoneHref},${d.phoneExt}` : company.phoneHref;
+
+const services = await getCollection('services');
+const practiceAreaDetails = d.practiceAreas
+  .map((slug) => services.find((s) => s.slug === slug))
+  .filter(Boolean);
+
+const seoDescription = d.bio
+  ? `${d.role} chez AUDEX Avocats. ${d.bio.slice(0, 140).trimEnd()}…`
+  : `${d.role} chez AUDEX Avocats — cabinet juridique à Québec et Portneuf.`;
+---
+
+<BaseLayout title={`${displayName} — AUDEX Avocats`} description={seoDescription} headerSolid>
+
+  <!-- Profile hero -->
+  <section class="profile-hero">
+    <div class="container-audex">
+      <nav class="profile-breadcrumb" aria-label="Fil d'Ariane">
+        <a href="/">Accueil</a>
+        <span aria-hidden="true">›</span>
+        <a href="/notre-equipe/">Notre équipe</a>
+        <span aria-hidden="true">›</span>
+        <span>{d.name}</span>
+      </nav>
+
+      <div class="profile-header">
+        <div class="profile-photo-wrap">
+          {d.photo
+            ? <img src={d.photo} alt={d.name} width="240" height="240" class="profile-photo" />
+            : <div class="profile-photo profile-photo--empty" />}
+        </div>
+
+        <div class="profile-info">
+          <h1>{displayName}</h1>
+          <p class="profile-role">{d.role}</p>
+
+          {(d.email || d.phoneExt) && (
+            <div class="profile-contact">
+              {d.phoneExt && (
+                <a href={phoneHref} class="profile-contact-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>418 462-1010, poste {d.phoneExt}</span>
+                </a>
+              )}
+              {d.email && (
+                <a href={`mailto:${d.email}`} class="profile-contact-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <span>{d.email}</span>
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio -->
+  {d.bio && d.bio.trim() && (
+    <section class="section">
+      <div class="container-audex profile-body">
+        <h2>À propos</h2>
+        <p>{d.bio}</p>
+      </div>
+    </section>
+  )}
+
+  <!-- Practice areas -->
+  {practiceAreaDetails.length > 0 && (
+    <section class="section section-light">
+      <div class="container-audex">
+        <h2>Champs de pratique</h2>
+        <div class="practice-chips">
+          {practiceAreaDetails.map((service) => (
+            <a href={`/services/${service!.slug}/`} class="practice-chip">
+              {service!.data.shortTitle}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CtaBlock
+    title="Discutez de votre situation"
+    subtitle="Prenez rendez-vous pour une première consultation à tarif fixe."
+  />
+
+</BaseLayout>
+
+<style>
+  /* ── Hero ── */
+  .profile-hero {
+    background: var(--color-navy);
+    color: var(--color-white);
+    padding: 6rem 1.5rem 4rem;
+  }
+  .profile-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .profile-breadcrumb a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  .profile-breadcrumb a:hover {
+    color: var(--color-gold);
+  }
+  .profile-breadcrumb span[aria-hidden] {
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .profile-breadcrumb span:last-child {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .profile-photo-wrap {
+    flex-shrink: 0;
+  }
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(230, 165, 16, 0.5);
+    display: block;
+  }
+  .profile-photo--empty {
+    background: linear-gradient(135deg, var(--color-navy-light) 0%, rgba(255,255,255,0.1) 100%);
+  }
+  .profile-info h1 {
+    color: var(--color-white);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    margin-bottom: 0.4rem;
+  }
+  .profile-role {
+    color: var(--color-gold);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+  .profile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .profile-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  .profile-contact-link:hover {
+    color: var(--color-gold);
+  }
+  .profile-contact-link svg {
+    flex-shrink: 0;
+    color: var(--color-gold);
+  }
+
+  /* ── Bio ── */
+  .profile-body {
+    max-width: 720px;
+  }
+  .profile-body h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* ── Practice chips ── */
+  .practice-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  .practice-chip {
+    display: inline-block;
+    padding: 0.55rem 1.25rem;
+    background: var(--color-white);
+    border: 2px solid var(--color-gold);
+    border-radius: 100px;
+    color: var(--color-navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition);
+  }
+  .practice-chip:hover {
+    background: var(--color-gold);
+    color: var(--color-white);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    .profile-hero {
+      padding: 5rem 1.25rem 3rem;
+    }
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+    }
+  }
+</style>

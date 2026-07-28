@@ -151,61 +151,11 @@
   to   = "/services/droit-jeunesse/"
   status = 301
 
-# ─── Profils équipe individuels — 302 TEMPORAIRE (pages recréées en phase 2) ──
-[[redirects]]
-  from = "/notre-equipe/anne-florence-beland/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/audrey-auclair/"
-  to   = "/notre-equipe/"
-  status = 302
-
+# ─── Ancienne fiche sans page (ex-membre) ────────────────────────────────────
 [[redirects]]
   from = "/notre-equipe/audrey-castonguay/"
   to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/audrey-michaud-roy/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/jacob-lachance/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/kevin-plamondon/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/lori-ann-hurtubise/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/maryssa-carrier-floyd/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/mireille-moreau/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/veronik-levesque/"
-  to   = "/notre-equipe/"
-  status = 302
-
-[[redirects]]
-  from = "/notre-equipe/yannick-drapeau/"
-  to   = "/notre-equipe/"
-  status = 302
+  status = 301
 
 # ─── Articles et publications ─────────────────────────────────────────────────
 [[redirects]]

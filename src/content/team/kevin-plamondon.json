@@ -5,7 +5,7 @@
   "photo": "/images/equipe/kevin-plamondon.webp",
   "email": "k.plamondon@avoc.ca",
   "phoneExt": "102",
-  "practiceAreas": [],
+  "practiceAreas": ["droit-familial", "mediation-familiale", "droit-civil-general", "droit-commercial", "droit-criminel-penal", "droit-emploi-travail", "droit-jeunesse", "droit-administratif", "droit-municipal"],
   "order": 13,
   "mascot": false
 }

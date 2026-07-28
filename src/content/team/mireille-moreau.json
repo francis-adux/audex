@@ -5,7 +5,7 @@
   "photo": "/images/equipe/mireille-moreau.webp",
   "email": "m.moreau@avoc.ca",
   "phoneExt": "103",
-  "practiceAreas": [],
+  "practiceAreas": ["droit-familial", "droit-jeunesse", "droit-commercial", "droit-administratif", "droit-civil-general"],
   "order": 11,
   "mascot": false
 }

@@ -10,9 +10,10 @@ export interface Props {
   email?: string;
   phoneExt?: string;
   mascot?: boolean;
+  href?: string;
 }
 
-const { name, credentials, role, bio, photo, email, phoneExt, mascot = false } = Astro.props;
+const { name, credentials, role, bio, photo, email, phoneExt, mascot = false, href } = Astro.props;
 const displayName = credentials ? `${name}, ${credentials}` : name;
 const phoneHref = phoneExt
   ? `${company.phoneHref},${phoneExt}`
@@ -21,9 +22,13 @@ const phoneHref = phoneExt
 
 <div class:list={['team-card', mascot && 'team-card-mascot']}>
   <div class:list={['team-photo', !photo && 'no-photo']}>
-    {photo && <img src={photo} alt={name} loading="lazy" width="400" height="400" />}
+    {photo && (
+      href
+        ? <a href={href} tabindex="-1" aria-hidden="true"><img src={photo} alt={name} loading="lazy" width="400" height="400" /></a>
+        : <img src={photo} alt={name} loading="lazy" width="400" height="400" />
+    )}
   </div>
-  <h3>{displayName}</h3>
+  {href ? <h3><a href={href} class="team-name-link">{displayName}</a></h3> : <h3>{displayName}</h3>}
   <p class="team-title">{role}</p>
   {bio && <p class="team-bio">{bio}</p>}
 
@@ -70,6 +75,14 @@ const phoneHref = phoneExt
   }
   .team-contact-line svg {
     flex-shrink: 0;
+    color: var(--color-gold);
+  }
+  .team-name-link {
+    color: var(--color-navy);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  .team-name-link:hover {
     color: var(--color-gold);
   }
 </style>
