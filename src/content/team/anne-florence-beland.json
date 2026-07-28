@@ -1,11 +1,12 @@
 {
-  "name": "Anne-Florence Béland",
-  "credentials": "LL.B.",
-  "role": "Directrice des technologies",
-  "photo": "/images/equipe/anne-florence-beland.webp",
-  "email": "af.beland@avoc.ca",
-  "phoneExt": "101",
+  "bio": "test",
+  "mascot": false,
   "practiceAreas": [],
+  "name": "Anne-Florence Béland",
   "order": 2,
-  "mascot": false
+  "photo": "/images/equipe/anne-florence-beland.webp",
+  "phoneExt": "101",
+  "role": "Directrice des technologies",
+  "credentials": "LL.B.",
+  "email": "af.beland@avoc.ca"
 }
