@@ -127,7 +127,21 @@ collections:
       - { label: 'Photo', name: 'photo', widget: 'image', required: false }
       - { label: 'Courriel', name: 'email', widget: 'string', required: false }
       - { label: 'Poste téléphonique', name: 'phoneExt', widget: 'string', required: false }
-      - { label: 'Domaines de pratique (slugs)', name: 'practiceAreas', widget: 'list', required: false }
+      - label: 'Domaines de pratique'
+        name: practiceAreas
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: 'Droit familial', value: 'droit-familial' }
+          - { label: 'Médiation familiale', value: 'mediation-familiale' }
+          - { label: 'Droit civil général', value: 'droit-civil-general' }
+          - { label: 'Droit commercial', value: 'droit-commercial' }
+          - { label: 'Droit criminel et pénal', value: 'droit-criminel-penal' }
+          - { label: "Droit de l'emploi et du travail", value: 'droit-emploi-travail' }
+          - { label: 'Droit de la jeunesse', value: 'droit-jeunesse' }
+          - { label: 'Droit administratif', value: 'droit-administratif' }
+          - { label: 'Droit municipal', value: 'droit-municipal' }
       - { label: 'Ordre d’affichage', name: 'order', widget: 'number', default: 10, value_type: 'int' }
       - { label: 'Mascotte?', name: 'mascot', widget: 'boolean', default: false, required: false }
 
