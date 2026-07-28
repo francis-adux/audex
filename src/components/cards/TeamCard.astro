@@ -30,7 +30,6 @@ const phoneHref = phoneExt
   </div>
   {href ? <h3><a href={href} class="team-name-link">{displayName}</a></h3> : <h3>{displayName}</h3>}
   <p class="team-title">{role}</p>
-  {bio && <p class="team-bio">{bio}</p>}
 
   {(email || phoneExt) && !mascot && (
     <div class="team-contact">

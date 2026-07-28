@@ -123,7 +123,7 @@ collections:
       - { label: 'Nom complet', name: 'name', widget: 'string' }
       - { label: 'Titre professionnel (ex. LL.B.)', name: 'credentials', widget: 'string', required: false }
       - { label: 'Rôle', name: 'role', widget: 'string' }
-      - { label: 'Biographie', name: 'bio', widget: 'text' }
+      - { label: 'Biographie', name: 'bio', widget: 'markdown', required: false, minimal: true }
       - { label: 'Photo', name: 'photo', widget: 'image', required: false }
       - { label: 'Courriel', name: 'email', widget: 'string', required: false }
       - { label: 'Poste téléphonique', name: 'phoneExt', widget: 'string', required: false }

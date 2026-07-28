@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { marked } from 'marked';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBlock from '../../components/sections/CtaBlock.astro';
 import { company } from '../../data/company';
@@ -24,8 +25,10 @@ const practiceAreaDetails = d.practiceAreas
   .map((slug) => services.find((s) => s.slug === slug))
   .filter(Boolean);
 
-const seoDescription = d.bio
-  ? `${d.role} chez AUDEX Avocats. ${d.bio.slice(0, 140).trimEnd()}…`
+const bioHtml = d.bio && d.bio.trim() ? await marked.parse(d.bio) : null;
+const bioPlain = d.bio ? d.bio.replace(/[#*_[\]`>]/g, '').slice(0, 140).trimEnd() : '';
+const seoDescription = bioPlain
+  ? `${d.role} chez AUDEX Avocats. ${bioPlain}…`
   : `${d.role} chez AUDEX Avocats — cabinet juridique à Québec et Portneuf.`;
 ---
 
@@ -80,11 +83,11 @@ const seoDescription = d.bio
   </section>
 
   <!-- Bio -->
-  {d.bio && d.bio.trim() && (
+  {bioHtml && (
     <section class="section">
       <div class="container-audex profile-body">
         <h2>À propos</h2>
-        <p>{d.bio}</p>
+        <div class="bio-content" set:html={bioHtml} />
       </div>
     </section>
   )}
@@ -201,6 +204,15 @@ const seoDescription = d.bio
   .profile-body h2 {
     margin-bottom: 1rem;
   }
+  .bio-content :global(p) { margin-bottom: 1rem; line-height: 1.8; }
+  .bio-content :global(p:last-child) { margin-bottom: 0; }
+  .bio-content :global(strong) { color: var(--color-navy); font-weight: 700; }
+  .bio-content :global(em) { font-style: italic; }
+  .bio-content :global(ul) { list-style: disc; margin: 0 0 1rem 1.5rem; }
+  .bio-content :global(ol) { list-style: decimal; margin: 0 0 1rem 1.5rem; }
+  .bio-content :global(li) { margin-bottom: 0.4rem; }
+  .bio-content :global(a) { color: var(--color-gold); text-decoration: underline; }
+  .bio-content :global(a:hover) { color: var(--color-gold-hover); }
 
   /* ── Practice chips ── */
   .practice-chips {
