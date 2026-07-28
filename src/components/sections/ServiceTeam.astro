@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   members: CollectionEntry<'team'>[];
-  serviceTitle: string;
+  serviceTitle?: string;
 }
 
 const { members, serviceTitle } = Astro.props;
@@ -13,8 +13,8 @@ const { members, serviceTitle } = Astro.props;
   <section class="section section-light service-team">
     <div class="container-audex">
       <div class="section-header">
-        <h2>Notre équipe en {serviceTitle}</h2>
-        <p>Ces avocats et avocates pratiquent dans ce domaine.</p>
+        <h2>{serviceTitle ? `Notre équipe en ${serviceTitle}` : 'Notre équipe dans ce domaine'}</h2>
+        <p>{serviceTitle ? 'Ces avocats et avocates pratiquent dans ce domaine.' : 'Ces avocats et avocates peuvent vous accompagner dans cette situation.'}</p>
       </div>
       <div class="service-team-grid">
         {members.map((m) => (

@@ -2,8 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HeroInternal from '../../components/sections/HeroInternal.astro';
 import ArticleRelatedServices from '../../components/sections/ArticleRelatedServices.astro';
+import ServiceTeam from '../../components/sections/ServiceTeam.astro';
 import { getCollection } from 'astro:content';
-import { tagToServiceUrl } from '../../data/tag-to-service';
+import { tagToServiceUrl, tagsToServiceSlugs } from '../../data/tag-to-service';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -15,6 +16,12 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+const serviceSlugsList = tagsToServiceSlugs(post.data.tags, 9);
+const allTeam = await getCollection('team');
+const blogTeamMembers = allTeam
+  .filter((m) => !m.data.mascot && m.data.practiceAreas.some((area) => serviceSlugsList.includes(area)))
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
 const formatDate = (d: Date) =>
   d.toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -68,6 +75,8 @@ const formatDate = (d: Date) =>
       </div>
     </div>
   </article>
+
+  <ServiceTeam members={blogTeamMembers} />
 
   <ArticleRelatedServices tags={post.data.tags} />
 </BaseLayout>
