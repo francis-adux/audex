@@ -1,11 +1,15 @@
 {
+  "bio": "Après avoir d’abord intégré notre équipe à titre d’étudiante en droit durant ses études universitaires, Audrey a complété son stage du Barreau au sein du cabinet pour ensuite y poursuivre sa carrière professionnelle.\n\nAu cours de son parcours à l’Université Laval, elle s’est investie comme bénévole au Bureau d’information juridique, offrant soutien et information.\n\nÀ l’écoute, rigoureuse et déterminée, Audrey vous accompagnera avec dévouement tout au long de votre dossier, afin que vous vous sentiez soutenus, compris et en confiance.",
+  "mascot": false,
+  "practiceAreas": [
+    "droit-familial",
+    "droit-jeunesse"
+  ],
   "name": "Audrey Michaud-Roy",
-  "credentials": "LL.B.",
-  "role": "Avocate",
-  "photo": "/images/equipe/audrey-michaud-roy.webp",
-  "email": "a.michaud-roy@avoc.ca",
-  "phoneExt": "108",
-  "practiceAreas": ["droit-familial", "droit-jeunesse"],
   "order": 10,
-  "mascot": false
+  "photo": "/images/equipe/audrey-michaud-roy.webp",
+  "phoneExt": "108",
+  "role": "Avocate",
+  "credentials": "LL.B.",
+  "email": "a.michaud-roy@avoc.ca"
 }
