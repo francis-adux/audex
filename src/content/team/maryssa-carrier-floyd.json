@@ -1,11 +1,12 @@
 {
-  "name": "Maryssa Carrier-Floyd",
-  "credentials": "LL.B.",
-  "role": "Étudiante en droit",
-  "photo": "/images/equipe/maryssa-carrier-floyd.webp",
-  "email": "m.carrier-floyd@avoc.ca",
-  "phoneExt": "110",
+  "bio": "Maryssa est étudiante en droit au sein de notre bureau. Elle a toujours su qu'elle voulait un métier lui permettant d'aider les autres concrètement. Après avoir complété son baccalauréat en droit, elle se dirige maintenant vers une maîtrise en droit criminel pour approfondir sa spécialisation, tout en conservant une passion pour le droit familial. Ce qui la motive chaque jour : accompagner les gens avec compassion, surtout dans les périodes plus difficiles de leur parcours.",
+  "mascot": false,
   "practiceAreas": [],
+  "name": "Maryssa Carrier-Floyd",
   "order": 3,
-  "mascot": false
+  "photo": "/images/equipe/maryssa-carrier-floyd.webp",
+  "phoneExt": "110",
+  "role": "Étudiante en droit",
+  "credentials": "LL.B.",
+  "email": "m.carrier-floyd@avoc.ca"
 }
