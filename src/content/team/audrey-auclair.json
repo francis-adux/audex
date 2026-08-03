@@ -1,11 +1,15 @@
 {
+  "bio": "Me Audrey Auclair pratique le droit de la famille au sein de notre équipe, où elle accompagne ses client·e·s à travers les étapes difficiles d'une séparation : garde d'enfants, pension alimentaire, divorce, partage du patrimoine et autres enjeux financiers liés à la rupture.\n\nSon approche allie rigueur juridique et écoute humaine. Que ce soit dans le cadre d'une demande en justice, de négociations ou d'une entente de séparation, Me Auclair s'assure que chaque dossier soit traité avec la même attention : comprendre la situation réelle des familles pour bâtir des solutions qui tiennent la route, tant sur le plan légal que sur le plan humain.\n\nDiplômée de l'Université Laval (baccalauréat en droit, LL. B.), Me Auclair est membre du Barreau du Québec depuis 2025. Elle exerce à nos bureaux de Québec et de Donnacona, où elle sert une clientèle diversifiée à travers la grande région de la Capitale-Nationale.\n\nReconnue pour son écoute et sa capacité à mettre les gens à l'aise, elle croit qu'une communication claire et un accompagnement bienveillant font toute la différence, même dans les moments les plus difficiles.",
+  "mascot": false,
+  "practiceAreas": [
+    "droit-familial",
+    "droit-civil-general"
+  ],
   "name": "Audrey Auclair",
-  "credentials": "LL.B.",
-  "role": "Avocate",
-  "photo": "/images/equipe/audrey-auclair.webp",
-  "email": "a.auclair@avoc.ca",
-  "phoneExt": "106",
-  "practiceAreas": ["droit-familial", "droit-civil-general"],
   "order": 1,
-  "mascot": false
+  "photo": "/images/equipe/audrey-auclair.webp",
+  "phoneExt": "106",
+  "role": "Avocate",
+  "credentials": "LL.B.",
+  "email": "a.auclair@avoc.ca"
 }
