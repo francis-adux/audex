@@ -1,10 +1,11 @@
 {
-  "name": "Lei-An Tremblay",
-  "role": "Stagiaire en droit",
-  "photo": "/images/audex_avocat_lei-an.png",
-  "email": "la.tremblay@avoc.ca",
-  "phoneExt": "116",
+  "bio": "Lei-An a fait son cégep en sciences humaines, où elle a développé un vif intérêt pour la dimension humaine des enjeux sociaux. Elle a poursuivi ce parcours au baccalauréat en droit à l'Université Laval, développant un intérêt particulier pour le droit familial. Elle complète actuellement son stage du Barreau au sein du cabinet, où elle allie ses connaissances juridiques à une écoute attentive et à une volonté sincère envers ses futurs clients.",
+  "mascot": false,
   "practiceAreas": [],
+  "name": "Lei-An Tremblay",
   "order": 16,
-  "mascot": false
+  "photo": "/images/audex_avocat_lei-an.png",
+  "phoneExt": "116",
+  "role": "Stagiaire en droit",
+  "email": "la.tremblay@avoc.ca"
 }
