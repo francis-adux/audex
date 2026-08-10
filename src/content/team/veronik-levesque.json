@@ -1,11 +1,16 @@
 {
+  "bio": "### Parcours professionnel :\n\nAprès avoir obtenu son diplôme d’études collégiales en technique juridique, Véronik poursuit ses études à l’université en criminologie. Ensuite, ayant vaguement touché au droit tout au long de son parcours aux études supérieures, Véronik, curieuse envers ce domaine, se dirige vers le baccalauréat en droit afin d’obtenir les connaissances nécessaires dans le but de défendre les droits des personnes.\n\n#### **Formation :**\n\n* Diplôme d’études collégiales en techniques juridiques, Cégep Garneau, 2020; \n* Baccalauréat en criminologie, Université Laval, 2023; \n* Baccalauréat en droit (LL.B.), Université Laval, mai 2026 (en cours)",
+  "mascot": false,
+  "practiceAreas": [
+    "droit-familial",
+    "droit-criminel-penal",
+    "droit-civil-general"
+  ],
   "name": "Véronik Levesque",
-  "credentials": "LL.B.",
-  "role": "Technicienne juridique et étudiante en droit",
-  "photo": "/images/equipe/veronik-levesque.webp",
-  "email": "v.levesque@avoc.ca",
-  "phoneExt": "109",
-  "practiceAreas": [],
   "order": 9,
-  "mascot": false
+  "photo": "/images/equipe/veronik-levesque.webp",
+  "phoneExt": "109",
+  "role": "Technicienne juridique et étudiante en droit",
+  "credentials": "LL.B.",
+  "email": "v.levesque@avoc.ca"
 }
