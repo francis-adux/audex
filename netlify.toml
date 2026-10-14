@@ -118,12 +118,12 @@
 
 [[redirects]]
   from = "/champs-de-pratique/droit-civil-general/"
-  to   = "/services/droit-civil-general/"
+  to   = "/"
   status = 301
 
 [[redirects]]
   from = "/champs-de-pratique/droit-commercial-et-de-lentreprise/"
-  to   = "/services/droit-commercial/"
+  to   = "/services/droit-affaires/"
   status = 301
 
 [[redirects]]
@@ -133,22 +133,53 @@
 
 [[redirects]]
   from = "/champs-de-pratique/droit-administratif-et-social/"
-  to   = "/services/droit-administratif/"
+  to   = "/"
   status = 301
 
 [[redirects]]
   from = "/champs-de-pratique/droit-municipal/"
-  to   = "/services/droit-municipal/"
+  to   = "/"
   status = 301
 
 [[redirects]]
   from = "/champs-de-pratique/droit-de-lemploi-et-du-travail/"
-  to   = "/services/droit-emploi-travail/"
+  to   = "/"
   status = 301
 
 [[redirects]]
   from = "/champs-de-pratique/droit-de-la-jeunesse/"
-  to   = "/services/droit-jeunesse/"
+  to   = "/services/droit-familial/"
+  status = 301
+
+# ─── Services archivés ───────────────────────────────────────────────────────
+[[redirects]]
+  from = "/services/droit-commercial/"
+  to   = "/services/droit-affaires/"
+  status = 301
+
+[[redirects]]
+  from = "/services/droit-civil-general/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services/droit-emploi-travail/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services/droit-jeunesse/"
+  to   = "/services/droit-familial/"
+  status = 301
+
+[[redirects]]
+  from = "/services/droit-administratif/"
+  to   = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services/droit-municipal/"
+  to   = "/"
   status = 301
 
 # ─── Ancienne fiche sans page (ex-membre) ────────────────────────────────────
@@ -160,7 +191,7 @@
 # ─── Articles et publications ─────────────────────────────────────────────────
 [[redirects]]
   from = "/vices-caches/"
-  to   = "/services/droit-civil-general/"
+  to   = "/"
   status = 301
 
 [[redirects]]

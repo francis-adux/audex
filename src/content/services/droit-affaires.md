@@ -44,9 +44,6 @@ highlight:
   title: On parle votre langage d'entrepreneur
   description: "Pas de jargon inutile : des conseils pratiques et directs, adaptés
     à la réalité des PME de la région de Québec."
-testimonial:
-  quote: " "
-  author: " "
 faq:
   - question: Comment incorporer une entreprise au Québec?
     answer: L'incorporation consiste à créer une personne morale distincte de vous.
@@ -90,9 +87,8 @@ faq:
       résoudre le conflit rapidement."
 ctaText: Discutez de la situation de votre entreprise avec un avocat
 relatedServices:
-  - droit-civil-general
-  - droit-emploi-travail
-  - droit-administratif
+  - droit-familial
+  - droit-criminel-penal
 ---
 
 Que vous soyez en train de démarrer votre entreprise, de négocier un contrat important ou de faire face à un litige avec un associé, les questions juridiques peuvent vite devenir un obstacle à la croissance de votre PME.

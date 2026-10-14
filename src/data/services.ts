@@ -1,13 +1,8 @@
 export type ServiceIconKey =
   | 'family'
   | 'mediation'
-  | 'civil'
   | 'commercial'
-  | 'criminal'
-  | 'admin'
-  | 'employment'
-  | 'youth'
-  | 'municipal';
+  | 'criminal';
 
 export interface ServiceEntry {
   slug: string;
@@ -44,51 +39,11 @@ export const services: ServiceEntry[] = [
     blurb: 'Défense criminelle et pénale',
   },
   {
-    slug: 'droit-jeunesse',
-    title: 'Droit de la jeunesse',
-    shortTitle: 'Droit de la jeunesse',
-    navTitle: 'Droit de la jeunesse',
-    icon: 'youth',
-    blurb: 'Protection de la jeunesse et DPJ',
-  },
-  {
-    slug: 'droit-civil-general',
-    title: 'Droit civil général',
-    shortTitle: 'Droit civil général',
-    navTitle: 'Droit civil général',
-    icon: 'civil',
-    blurb: 'Litiges, contrats, responsabilité',
-  },
-  {
-    slug: 'droit-commercial',
-    title: "Droit commercial et de l'entreprise",
-    shortTitle: 'Droit commercial',
-    navTitle: 'Droit commercial',
+    slug: 'droit-affaires',
+    title: 'Droit des affaires',
+    shortTitle: 'Droit des affaires',
+    navTitle: 'Droit des affaires',
     icon: 'commercial',
     blurb: 'Entreprises et transactions',
-  },
-  {
-    slug: 'droit-administratif',
-    title: 'Droit administratif',
-    shortTitle: 'Droit administratif',
-    navTitle: 'Droit administratif',
-    icon: 'admin',
-    blurb: 'Décisions gouvernementales et tribunaux',
-  },
-  {
-    slug: 'droit-municipal',
-    title: 'Droit municipal',
-    shortTitle: 'Droit municipal',
-    navTitle: 'Droit municipal',
-    icon: 'municipal',
-    blurb: 'Règlements municipaux et zonage',
-  },
-  {
-    slug: 'droit-emploi-travail',
-    title: 'Droit du travail',
-    shortTitle: 'Droit du travail',
-    navTitle: 'Droit du travail',
-    icon: 'employment',
-    blurb: 'Relations de travail et congédiement',
   },
 ];
