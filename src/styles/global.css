@@ -374,7 +374,7 @@
   .mobile-cta-float { display: none; }
   body { padding-bottom: 0; }
   .pillars-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
-  .services-grid { grid-template-columns: repeat(5, 1fr); gap: 1.25rem; }
+  .services-grid { grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
   .service-card { flex-direction: column; text-align: center; padding: 1.5rem 1rem; }
   .service-card .arrow { display: none; }
   .team-grid { grid-template-columns: repeat(3, 1fr); }
