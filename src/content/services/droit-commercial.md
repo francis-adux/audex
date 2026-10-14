@@ -2,7 +2,7 @@
 title: Droit des affaires
 shortTitle: Droit des affaires
 order: 4
-seoTitle: Droit commercial | AUDEX Avocats
+seoTitle: Droit des affaires | AUDEX Avocats
 seoDescription: "Avocat en droit des affaires au Québec : incorporation,
   convention d'actionnaires, contrats et litiges d'entreprise. AUDEX Avocats."
 heroTitle: Protégez votre entreprise avec un avocat qui comprend les PME
