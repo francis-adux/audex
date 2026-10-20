@@ -3,11 +3,12 @@
 // and the clickable tags at the bottom of each article page.
 
 export const TAG_TO_SERVICE: Record<string, string> = {
-  'Droit familial': 'droit-familial',
-  Médiation: 'mediation-familiale',
-  'Droit commercial': 'droit-affaires',
   'Droit criminel': 'droit-criminel-penal',
   'Crimes économiques': 'droit-criminel-penal',
+  'Droit commercial': 'droit-affaires',
+  'Droit du travail': 'droit-emploi-travail',
+  'Droit familial': 'droit-familial',
+  Médiation: 'mediation-familiale',
 };
 
 // Return up to N unique service slugs from a list of tags

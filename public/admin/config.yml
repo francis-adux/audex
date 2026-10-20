@@ -133,10 +133,11 @@ collections:
         multiple: true
         required: false
         options:
-          - { label: 'Droit familial', value: 'droit-familial' }
-          - { label: 'Médiation familiale', value: 'mediation-familiale' }
           - { label: 'Droit criminel et pénal', value: 'droit-criminel-penal' }
           - { label: 'Droit des affaires', value: 'droit-affaires' }
+          - { label: 'Droit du travail', value: 'droit-emploi-travail' }
+          - { label: 'Droit familial', value: 'droit-familial' }
+          - { label: 'Médiation familiale', value: 'mediation-familiale' }
       - { label: 'Ordre d’affichage', name: 'order', widget: 'number', default: 10, value_type: 'int' }
       - { label: 'Mascotte?', name: 'mascot', widget: 'boolean', default: false, required: false }
 

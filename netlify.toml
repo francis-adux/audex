@@ -162,10 +162,6 @@
   to   = "/"
   status = 301
 
-[[redirects]]
-  from = "/services/droit-emploi-travail/"
-  to   = "/"
-  status = 301
 
 [[redirects]]
   from = "/services/droit-jeunesse/"
